@@ -10,9 +10,13 @@ This public repository studies bandwidth-one Weil-form certificates and finite-b
 
 ## Cite this release
 
-- **Archived version v0.1.0:** [DOI 10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818)
+- **Archived version (fixed v0.1.0 snapshot):** [DOI 10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818)
+- **All-versions Zenodo concept DOI:** [10.5281/zenodo.23244817](https://doi.org/10.5281/zenodo.23244817) — resolves to the latest Zenodo version, not a substitute for citing the fixed v0.1.0 archive.
 - **Frozen GitHub source:** [v0.1.0 release](https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0), commit `6d799bddd9a27ba79c4faf8c757f7985ceb6d4c2`.
 - The DOI identifies the archived research software and its exact version. Subsequent documentation commits on `main` do not alter the frozen v0.1.0 tag. The 68.820273% calculation is conditional, 79.627% is a model frontier, and strict >79% remains unproved.
+
+
+**Zenodo version-field clarification (9 October 2026):** the Zenodo landing page presently displays `Version v1`, whereas the uploaded ZIP is named `riemann-bandwidth1-verification-0.1.0.zip` and the source is the GitHub `v0.1.0` tag. This is a deposit metadata-label mismatch, not an additional code version. GitHub cannot edit the Zenodo record; the Zenodo owner may correct that metadata separately. The archival source and tag are not rewritten.
 
 ## Start here
 
