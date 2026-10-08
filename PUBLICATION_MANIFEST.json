@@ -1,7 +1,7 @@
 {
   "proposal_only": false,
   "repository": "reggaesharkk/riemann-bandwidth1-verification",
-  "source_provenance": "Selected files from a private research repository created 2026-10-03; no private Git history, branch names, commit IDs, or NotebookLM packet files are transferred.",
+  "source_provenance": "Selected files from a private research repository created 2026-10-03; no private Git history, branch names, commit IDs, or private working materials are transferred.",
   "source_tree": "curated subset; original selected repository-relative paths preserved",
   "manifest_scope": "files excludes this manifest; SHA256SUMS.txt includes its hash",
   "files": [
@@ -97,7 +97,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "f5752d2a1baae60f28796c344360f537e8efceae84a0cb63902388fbb6b0ccde",
+      "sha256": "4a0aa5ced6035ad2246628894b180378ad8ebc73fb724b8cb2c67d6573f54550",
       "provenance": "prepared-publication-document"
     },
     {
