@@ -1,0 +1,65 @@
+{
+  "R": 6000,
+  "cutoff": "floor(exp(L-sqrt(L))), L=log(T/(2*pi))",
+  "original_masks": true,
+  "alias_carrier_retained": true,
+  "proper_powers_retained_before_gate_reduction": true,
+  "scope": "complete orientation-summed populations; never individual sign or frequency masks",
+  "census": [
+    {
+      "degree": 5,
+      "counts": {
+        "new_orientation_summed_self_bound": 160,
+        "prior_closed": 1312,
+        "surviving_all_distinct": 32,
+        "surviving_balanced_pair": 160
+      },
+      "class_count": 1664,
+      "sha256": "ff3d4b44fc3bd34fe984819846505e013088bbe553098bc255485105b2627ee4"
+    },
+    {
+      "degree": 6,
+      "counts": {
+        "exact_pair_main": 120,
+        "new_orientation_summed_self_bound": 3920,
+        "new_unconditional_degree_two": 720,
+        "prior_closed": 7688,
+        "surviving_all_distinct": 64,
+        "surviving_balanced_pair": 480
+      },
+      "class_count": 12992,
+      "sha256": "63ed6494c7dbe53729a05655d1ec02676d3a0490d54b7d7c88005aab9f1a6e63"
+    }
+  ],
+  "constants": {
+    "A": "11501/12500",
+    "B": "137641/250000",
+    "Jstar": "64788151489666079/572357731837500000",
+    "frozen_reference_margin": "52897896569489/572357731837500000"
+  },
+  "gaussian_pinching": {
+    "block_size": 9,
+    "purpose": "lower bound on exact Pair6_6000 only; no prime-row model",
+    "x": "1/pi^2",
+    "coefficients": [
+      "5/72",
+      "288223/403200",
+      "3189863194981/663828480000",
+      "2749260640878247123/156132458496000000"
+    ],
+    "pi_lower": "333/106",
+    "pi_upper": "22/7",
+    "lower": "31498340500050746323/150466924118016000000",
+    "required_negative_residual_at_least": "43770221409581023769108432686241/21264421581420459982848000000000000",
+    "upper_bound_on_full_Pair6": false
+  },
+  "self_bound": {
+    "error": "e_T*(1+(J_full+C)^(2/3)), e_T -> 0",
+    "young": "e*U^(2/3) <= U/2 + 16*e^3/27",
+    "sixth_bound_unconditional": false,
+    "bounded_gate_equivalence_proved": true
+  },
+  "arithmetic_inequality_12_proved": false,
+  "strict_gt79_proved": false,
+  "new_signed_saving_proved": false
+}

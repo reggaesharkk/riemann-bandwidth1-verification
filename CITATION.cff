@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the public repository release you used; until a public release exists, this metadata is a proposal."
+title: "Riemann Bandwidth-One Verification"
+authors:
+  - family-names: Upadhyay
+    given-names: Prince
+type: software
+abstract: >-
+  Selected exact identities, finite-dimensional proofs, audit notes and
+  reproducibility programs for a Riemann zeta zero-proportion research
+  project. The strict greater-than-79-percent simple-zero theorem remains
+  open and is not claimed.
