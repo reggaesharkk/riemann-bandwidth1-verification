@@ -1,6 +1,6 @@
-# Suggested GitHub repository topics
+# GitHub repository topics
 
-These are suggestions to apply manually after repository creation:
+The following topics are applied to the public repository:
 
 - riemann-zeta
 - analytic-number-theory

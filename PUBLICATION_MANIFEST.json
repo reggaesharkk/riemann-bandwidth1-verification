@@ -1,5 +1,5 @@
 {
-  "proposal_only": true,
+  "proposal_only": false,
   "repository": "reggaesharkk/riemann-bandwidth1-verification",
   "source_provenance": "Selected files from a private research repository created 2026-10-03; no private Git history, branch names, commit IDs, or NotebookLM packet files are transferred.",
   "source_tree": "curated subset; original selected repository-relative paths preserved",
@@ -17,7 +17,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "11b974b67e7caa2cf4421c371444a01b93590d9d4077e6ae09dc53a71772e0c8",
+      "sha256": "58553ea0c209430e1b03c8c56198e851cf19f6dc1c1cb8c5c74e1fed380f7e6c",
       "provenance": "prepared-publication-document"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "path": "LICENSE",
-      "sha256": "c7e93cd38b918fe52c3d45ce97ea39af4b4756ff956842c59d35222065242df7",
+      "sha256": "f1c25fcea4fb0b3ec1bf3e3efd5aeb62028429a9b699a4afe7990eaa894c8de2",
       "provenance": "prepared-publication-document"
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "path": "notes/WP84_PUBLICATION_READINESS_AUDIT.md",
-      "sha256": "2c87b3f0b4bcfef0387c4411dcb9aa768211b70f74a93301613e75bab1ae738f",
+      "sha256": "2ba69ed36a0d853b7d610d60ca772d2013c028388b0f2684822d3f5655fd5709",
       "provenance": "prepared-publication-document"
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "path": "notes/WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md",
-      "sha256": "c2bc436fa1bc181515564070eff9dc5f2384356d0a7220ed59ca53fc86e6f9f3",
+      "sha256": "eb552d24dffbd5ecba5862038ed89f5bf59bcd201f56de9f1562f36e203d3796",
       "provenance": "prepared-publication-document"
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "eaa8032bd87c443ea5f9461d926a382293b07d1b0a12e6a04774dec6ff6dbe25",
+      "sha256": "f5752d2a1baae60f28796c344360f537e8efceae84a0cb63902388fbb6b0ccde",
       "provenance": "prepared-publication-document"
     },
     {
@@ -117,7 +117,7 @@
     },
     {
       "path": "RIGHTS_POLICY_2026_10_01.md",
-      "sha256": "dbe7ffe8bd1685f21819d0b5e27ce2739aa9627def017e4f817e2e2ee3e66308",
+      "sha256": "6a94757a9e38cff195475ca16cc6d1fa476d463b1b17f2ef24d225b2892a24c2",
       "provenance": "prepared-publication-document"
     },
     {
@@ -167,7 +167,7 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "a138b5d726c43e18f6649a13f7f1e1d552e91c3dee9dc5c71babb4cc6cc40c4a",
+      "sha256": "febc0a55bf779694c34bc4b1ef0484522a31bef163d6c6a56b468ee916dd785d",
       "provenance": "prepared-publication-document"
     },
     {
@@ -177,12 +177,12 @@
     },
     {
       "path": "TOPICS.md",
-      "sha256": "d0d19d3bfa703ba787217631f25a3513507b1816f78f9437676e0d581536a097",
+      "sha256": "58242653978f32f3000ec22a3a36093bd2c93872a8e73996b244d6d0c15b1321",
       "provenance": "prepared-publication-document"
     },
     {
       "path": "VERIFICATION_SUMMARY.md",
-      "sha256": "6bd688118b99b38c27ccb21408ae3863de7ca413f52427e332dfebbfb5e525ae",
+      "sha256": "22688ac3dd06fc873de2c26a92b655f86b58ad10965f63c939b411d3251a1b16",
       "provenance": "prepared-publication-document"
     }
   ]

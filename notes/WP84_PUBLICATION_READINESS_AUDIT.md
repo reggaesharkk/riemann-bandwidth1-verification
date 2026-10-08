@@ -1,7 +1,7 @@
 # WP84 standalone contribution, proof and novelty audit
 
 Research publication-readiness assessment, 2026-10-08.
-This is not a new >79 proof. The public proposal does not include the
+This is not a new >79 proof. This public repository does not include the
 private repository's commit history or internal audit inventory.
 The concise frontier and exact reopening gate are in
 [WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md](WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md).
@@ -12,7 +12,7 @@ are not edited. Relative links resolve within this repository.
 
 The underlying private research was reviewed broadly, but its history
 inventory, internal file hashes and run logs are intentionally not part of
-this public proposal. The internal audit reported 43 named replay suites
+this public repository. The internal audit reported 43 named replay suites
 and four additional selected certificate runs passing on isolated copies.
 These historical checks do not reproduce in full from the selected public
 tree and are not represented as such. The included finite rank checks
@@ -21,7 +21,7 @@ or prove rank of the actual source family. Proof and novelty conclusions
 were evaluated for the five ranked candidates and the dependency chain,
 rather than inferred from file names or script PASS messages.
 
-The proposed release manifest records hashes of the files actually included
+The publication manifest records hashes of the files actually included
 here. Historical external-source programs are not vendored, and their
 presence in earlier private audit records is not a proof of the arithmetic
 claims under review. SymPy, mpmath and NumPy are runtime dependencies only;

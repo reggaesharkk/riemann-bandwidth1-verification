@@ -1,7 +1,7 @@
 # WP84 frozen research frontier and publication decision
 
 This report summarizes a research-frontier audit of the WP84 project. The
-source repository was created on 2026-10-03; this new public proposal does
+source repository was created on 2026-10-03; this separate public repository does
 not carry over its commit history, branch names, or private audit files.
 **Strict >79% is OPEN.**
 

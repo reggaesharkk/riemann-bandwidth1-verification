@@ -1,6 +1,7 @@
 cff-version: 1.2.0
-message: "Please cite the public repository release you used; until a public release exists, this metadata is a proposal."
+message: "Please cite this repository and the commit used. No versioned release tag has been published yet."
 title: "Riemann Bandwidth-One Verification"
+repository-code: "https://github.com/reggaesharkk/riemann-bandwidth1-verification"
 authors:
   - family-names: Upadhyay
     given-names: Prince
