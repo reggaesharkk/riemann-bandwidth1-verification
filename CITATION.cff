@@ -1,6 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite this repository and the commit used. No versioned release tag has been published yet."
+message: "Please cite the archived v0.1.0 research software release with DOI 10.5281/zenodo.23244818; strict >79% remains unproved."
 title: "Riemann Bandwidth-One Verification"
+version: "0.1.0"
+date-released: 2026-10-08
+doi: "10.5281/zenodo.23244818"
+url: "https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0"
 repository-code: "https://github.com/reggaesharkk/riemann-bandwidth1-verification"
 authors:
   - family-names: Upadhyay

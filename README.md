@@ -8,6 +8,12 @@ This public repository studies bandwidth-one Weil-form certificates and finite-b
 
 > **The strict >79% simple-zero theorem is unproved and remains OPEN.** This repository makes no Riemann Hypothesis claim and no unconditional >79% claim.
 
+## Cite this release
+
+- **Archived version v0.1.0:** [DOI 10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818)
+- **Frozen GitHub source:** [v0.1.0 release](https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0), commit `6d799bddd9a27ba79c4faf8c757f7985ceb6d4c2`.
+- The DOI identifies the archived research software and its exact version. Subsequent documentation commits on `main` do not alter the frozen v0.1.0 tag. The 68.820273% calculation is conditional, 79.627% is a model frontier, and strict >79% remains unproved.
+
 ## Start here
 
 - [Research status](RESEARCH_STATUS.md) — established, conditional, model-only, and open statements.

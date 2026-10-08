@@ -17,7 +17,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "58553ea0c209430e1b03c8c56198e851cf19f6dc1c1cb8c5c74e1fed380f7e6c",
+      "sha256": "45bdce399ac74d0c58df3a4de66e3796ccef8587b03edf1acc6bf35aa219923d",
       "provenance": "prepared-publication-document"
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "4a0aa5ced6035ad2246628894b180378ad8ebc73fb724b8cb2c67d6573f54550",
+      "sha256": "e8e40a81dba734ed7158b223e36d838aafb2820af1a8a2b162aec4325bd37cc0",
       "provenance": "prepared-publication-document"
     },
     {
