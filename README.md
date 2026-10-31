@@ -4,7 +4,7 @@
 
 **Prince Upadhyay · Independent Research**
 
-This public repository studies bandwidth-one Weil-form certificates and finite-band prime-operator methods relevant to lower bounds on simple critical-line zeros of the Riemann zeta function. It is a clean, curated tree of selected research artifacts. It does not import the private repository's Git history, branches, pull requests, private working materials, audit archives, or upstream A1294 source.
+I use this public repository to study bandwidth-one Weil-form certificates and finite-band prime-operator methods related to lower bounds on simple critical-line zeros of the Riemann zeta function. I curated the tree to keep the selected public artifacts separate from the private repository's Git history, branches, pull requests, working materials, audit archives and upstream A1294 source.
 
 > **The strict >79% simple-zero theorem is unproved and remains OPEN.** This repository makes no Riemann Hypothesis claim and no unconditional >79% claim.
 
