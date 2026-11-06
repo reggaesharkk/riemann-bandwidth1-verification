@@ -5,7 +5,7 @@ This note updates the public status record only. It does not add a theorem or ch
 ## Current mathematical status
 
 - The Riemann Hypothesis is **OPEN**.
-- The strict (>79\%\) simple-critical-line zero target is **OPEN**.
+- The strict greater-than-79% simple-critical-line zero target is **OPEN**.
 - The 79.627% value is a model frontier, not an unconditional zeta theorem.
 - The 68.820273% route remains conditional.
 - The complete A1294 root predicate and original-source authentication bridge are **OPEN**.
@@ -23,4 +23,4 @@ The 337,171,866-byte node-51 archive has SHA-256 `2461505d5cf86aeceb0dce12ad50fc
 
 The existing `v0.1.0` source tag, Zenodo version DOI [10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818), and all-versions concept DOI [10.5281/zenodo.23244817](https://doi.org/10.5281/zenodo.23244817) remain unchanged. This November status note and the companion audit archive are not part of the frozen v0.1.0 deposit. No license, DOI metadata, tag, or historical release is changed by this note.
 
-**Status: research continues; full A1294, the strict (>79\%\) claim, and RH remain unproved.**
+**Status: research continues; full A1294, the strict greater-than-79% claim, and RH remain unproved.**
