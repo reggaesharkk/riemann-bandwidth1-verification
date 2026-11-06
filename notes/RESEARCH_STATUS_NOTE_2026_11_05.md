@@ -1,27 +1,26 @@
-# Research-status note — 2026-11-05
+# Public research status — 2026-11-06
 
-This is a **documentation-only** status clarification for the publicly curated Riemann bandwidth-one verification repository. It is **not** a new release, a revised Zenodo deposit, a publication of the private A1294 source, or a claim of an improved unconditional zero proportion.
+This note updates the public status record only. It does not add a theorem or change the archived v0.1.0 software release.
 
-## Current public mathematical status
+## Current mathematical status
 
-- The Riemann Hypothesis is **not proved** by this project.
-- The strict `>79%` simple-critical-line zero target remains **OPEN**. The `79.627%` coefficient is a model calculation, not an unconditional zeta theorem.
-- The historical `68.820273%` route remains conditional and does not prove a new zero-proportion bound.
-- Private formal-verification and provenance-audit work has continued. **No private source certificate, Lean proof object, original source stream, local proof packet, unmerged Git history, or unpublished research claim is included here.** Its complete root-coverage and original-source authentication obligations have not been discharged.
-- External provenance checks (including hashes, evidence roots and mutation tests) and local kernel-checked lemmas play different roles; an integrity receipt is not a mathematical proof.
+- The Riemann Hypothesis is **OPEN**.
+- The strict (>79\%\) simple-critical-line zero target is **OPEN**.
+- The 79.627% value is a model frontier, not an unconditional zeta theorem.
+- The 68.820273% route remains conditional.
+- The complete A1294 root predicate and original-source authentication bridge are **OPEN**.
+- The WP84 ordinary-prime connected aggregate and R400 record budget are **OPEN**.
+- Some finite A1294 lemmas, terminal checks, and bounded subtree replays have separate Lean kernel-check records. Those partial results do not establish the full certificate or the target zero proportion.
+- Hashes, evidence receipts, numerical replays, and kernel proofs have distinct roles; provenance checks do not prove the mathematical claims.
 
-## Archival boundary
+## Public audit archive
 
-The existing `v0.1.0` source tag and archived version remain the reference for the earlier public software snapshot:
+The companion repository [riemann-bandwidth1-frontier-audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit) is public and has a published [audit archive release](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/releases/tag/audit-archive-snapshot-20261106). It contains selected A1294 and WP84 audit materials, including the node-51 source-connected replay packet. That archive is evidence material, not a proof of the full A1294 or WP84 theorem claims.
 
-- Version DOI: [10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818).
-- All-versions concept DOI: [10.5281/zenodo.23244817](https://doi.org/10.5281/zenodo.23244817).
-- Public release documentation identifies the frozen source commit `6d799bddd9a27ba79c4faf8c757f7985ceb6d4c2`.
+The 337,171,866-byte node-51 archive has SHA-256 `2461505d5cf86aeceb0dce12ad50fcddae1958cad9e12f316b5d49234fc3ac83`. Its source packet and partial proof record do not close complete root coverage, original source-byte-to-literal correspondence, or deterministic catalog-selection authentication.
 
-This note does **not** retag v0.1.0, change licensing, edit the archival DOI metadata, or incorporate the unpublished private work into the public archive. Existing `PUBLICATION_MANIFEST.json` and `SHA256SUMS.txt` retain the scope of the earlier snapshot; this subsequent documentation note must not be mistaken for a new Zenodo-published version.
+## Historical publication boundary
 
-## Disclosure and reproducibility policy
+The existing `v0.1.0` source tag, Zenodo version DOI [10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818), and all-versions concept DOI [10.5281/zenodo.23244817](https://doi.org/10.5281/zenodo.23244817) remain unchanged. This November status note and the companion audit archive are not part of the frozen v0.1.0 deposit. No license, DOI metadata, tag, or historical release is changed by this note.
 
-Private working documents and large evidence archives remain private until explicitly reviewed for release. Any future public formalization or research milestone requires a separately curated, reproducible package, a rights review, a fresh publication manifest, and claims limited to what the proof actually establishes.
-
-**Status as of 2026-11-05: research ongoing; full A1294 root predicate, strict >79% arithmetic target and Riemann Hypothesis remain open.**
+**Status: research continues; full A1294, the strict (>79\%\) claim, and RH remain unproved.**
