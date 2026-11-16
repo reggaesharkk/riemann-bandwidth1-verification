@@ -1,13 +1,13 @@
 {
   "proposal_only": false,
   "repository": "reggaesharkk/riemann-bandwidth1-verification",
-  "source_provenance": "Selected files from a private research repository created 2026-10-03; no private Git history, branch names, commit IDs, or private working materials are transferred.",
-  "source_tree": "curated subset; original selected repository-relative paths preserved",
+  "source_provenance": "Selected Riemann artifacts from the author's research archives. The WP84 bounded-consumer candidate was curated from publicly accessible frontier-audit material; no upstream Git history or unrelated project materials were transferred.",
+  "source_tree": "Curated subset; selected repository-relative paths preserved, with no upstream Git history transferred.",
   "manifest_scope": "files excludes this manifest; SHA256SUMS.txt includes its hash",
   "files": [
     {
       "path": ".github/workflows/verify.yml",
-      "sha256": "7fc1619eb80072680e28a25878a0cd22d91242bc6b69cd63d98307235e42b30e",
+      "sha256": "e117250152646e70468d67c381f6c2eed8ee32bc21dcff63a16b3f8d2d64ca49",
       "provenance": "prepared-publication-document"
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "path": "DEPENDENCY_MAP.md",
-      "sha256": "da8026b5546cf5d29755ddff5a7581204ac8bbf3e6ead039ed52e6f7637c589a",
+      "sha256": "9b75922b687fecacac9f5753b30b4c4484a0f2b4a6f545db5fedbc843586372c",
       "provenance": "prepared-publication-document"
     },
     {
@@ -36,18 +36,23 @@
       "provenance": "prepared-publication-document"
     },
     {
+      "path": "notes/WP84_BOUNDED_CHRISTOFFEL_CONSUMER.md",
+      "provenance": "public-frontier-candidate-curated-with-scope-limits",
+      "sha256": "947cd4856c828e2a8751e84f4cdf8f12c7414b43adaac130beb445805d0e0398"
+    },
+    {
       "path": "notes/WP84_C5_POINTWISE_SUPERCRITICAL_SIGN.md",
       "sha256": "fb9aa0a784e9c69babab473e99da2b87549f41784efe3f96620f17993dc2a2a2",
       "provenance": "prepared-publication-document"
     },
     {
-      "path": "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW_CERTIFICATE.json",
-      "sha256": "9f3783630e0698634d33347fa8a5f68c7c87d36f7ea77bfecfccbffc0048ef69",
+      "path": "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW.md",
+      "sha256": "56d089c49d4c8fbf29e33dcb2e70c658c7e93eaa742f8247d37a25c8b47ae627",
       "provenance": "prepared-publication-document"
     },
     {
-      "path": "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW.md",
-      "sha256": "56d089c49d4c8fbf29e33dcb2e70c658c7e93eaa742f8247d37a25c8b47ae627",
+      "path": "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW_CERTIFICATE.json",
+      "sha256": "9f3783630e0698634d33347fa8a5f68c7c87d36f7ea77bfecfccbffc0048ef69",
       "provenance": "prepared-publication-document"
     },
     {
@@ -102,12 +107,12 @@
     },
     {
       "path": "README.md",
-      "sha256": "87991f15f0821bd1f079588aa7ac58b75fda16d33213b40d5ed449edc1530e4a",
+      "sha256": "d1ab135cafdeb27c573d459426fa45addf12143fb6aba7311f28b9e9b429f9eb",
       "provenance": "prepared-publication-document"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "758cdb911cc5ab653f8f8a4f513de2525c1e346bb2081fcf09bc8edde56ddc45",
+      "sha256": "fc15b1b67478e16a105b5b079ed2d900ac5e7e40ff18798a9a900a01e48ca086",
       "provenance": "prepared-publication-document"
     },
     {
@@ -117,7 +122,7 @@
     },
     {
       "path": "RESEARCH_STATUS.md",
-      "sha256": "2709b61cc9f2fdd7118ae98408e82d8830d1af577f7cdcb91dd491495ac67134",
+      "sha256": "7c2e9b89065ea883277e2aa475ecefd3a0a71d681a166427b8d9a6d7830073c4",
       "provenance": "prepared-publication-document"
     },
     {
@@ -129,6 +134,11 @@
       "path": "src/checkpointed_c5_certificate.py",
       "sha256": "5f3e572b05061e19d2a946ee8b8093fdb2cc3e477b0fb53f8f5ff271cde06888",
       "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "src/wp84_bounded_christoffel_consumer.py",
+      "provenance": "public-frontier-checker-curated-and-corrected",
+      "sha256": "ac6873e21f98d6495c9e2710a2d841e247c1ddfcad0e39c2fb6ab4051a768f3c"
     },
     {
       "path": "src/wp84_c5_pointwise_supercritical_sign.py",
@@ -171,6 +181,11 @@
       "provenance": "prepared-publication-document"
     },
     {
+      "path": "tests/test_wp84_bounded_christoffel_consumer.py",
+      "provenance": "regression-tests-for-curated-bounded-consumer",
+      "sha256": "50e47a39fa7c314186af4b0b8ade376215163e799fcefd6ac894800c2d042583"
+    },
+    {
       "path": "THIRD_PARTY_NOTICES.md",
       "sha256": "febc0a55bf779694c34bc4b1ef0484522a31bef163d6c6a56b468ee916dd785d",
       "provenance": "prepared-publication-document"
@@ -187,7 +202,7 @@
     },
     {
       "path": "VERIFICATION_SUMMARY.md",
-      "sha256": "22688ac3dd06fc873de2c26a92b655f86b58ad10965f63c939b411d3251a1b16",
+      "sha256": "f722ae5b1db5b791dc3cbc3f7a0ecb8ac0f55b98cd6e86c3c0d0f47772bbb833",
       "provenance": "prepared-publication-document"
     }
   ]
