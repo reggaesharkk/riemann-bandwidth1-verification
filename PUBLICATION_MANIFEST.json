@@ -107,12 +107,12 @@
     },
     {
       "path": "README.md",
-      "sha256": "d1ab135cafdeb27c573d459426fa45addf12143fb6aba7311f28b9e9b429f9eb",
+      "sha256": "f4e1e1d369185bd64c921d74e202731d68e05a6a5bf1654f2a46dc0e43d08588",
       "provenance": "prepared-publication-document"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "fc15b1b67478e16a105b5b079ed2d900ac5e7e40ff18798a9a900a01e48ca086",
+      "sha256": "8bd0291833f2a80119341eb54f5fdf09579835875c2a5cdc9a1d6d02393d40d7",
       "provenance": "prepared-publication-document"
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "path": "VERIFICATION_SUMMARY.md",
-      "sha256": "f722ae5b1db5b791dc3cbc3f7a0ecb8ac0f55b98cd6e86c3c0d0f47772bbb833",
+      "sha256": "f72a230266b51cb044858b397aeebb27bc348c888cc77355a64d97a4c0d8ee69",
       "provenance": "prepared-publication-document"
     }
   ]

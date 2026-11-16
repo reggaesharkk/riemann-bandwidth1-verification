@@ -12,7 +12,7 @@
 
 **Prince Upadhyay · Independent Research**
 
-I use this public repository to study bandwidth-one Weil-form certificates and finite-band prime-operator methods related to lower bounds on simple critical-line zeros of the Riemann zeta function. I curated the tree to keep the selected public artifacts separate from the private repository's Git history, branches, pull requests, working materials, audit archives and upstream A1294 source.
+I use this public repository to study bandwidth-one Weil-form certificates and finite-band prime-operator methods related to lower bounds on simple critical-line zeros of the Riemann zeta function. I curated the tree from selected public artifacts; upstream Git history, branches, pull-request data, working files, archive materials and unrelated source files were not transferred.
 
 > **The strict >79% simple-zero theorem is unproved and remains OPEN.** This repository makes no Riemann Hypothesis claim and no unconditional >79% claim.
 
@@ -53,9 +53,9 @@ The publication audit ranks: (1) curvature-controlled discrete Loewner band trun
 
 ## Evidence and reproduction
 
-The earlier internal audit reported 43 designated replays and four additional selected certificate checks passing; this public tree does not reproduce that full suite. It contains five selected verifier programs and a chunked exact C5 certificate. The GitHub Actions workflow separates exact arithmetic, independent replay, manifest integrity, regression tests and 16 deterministic certificate shards. It uses public Ubuntu runners, commit-pinned actions, read-only repository permissions and explicit job timeouts below six hours; the only uploaded artifacts are generated public certificate shards, retained for five days. No private inputs or secrets are required. A verifier PASS establishes only the finite checks it implements; it does not prove the open arithmetic or zero-side claims. See REPRODUCIBILITY.md and VERIFICATION_SUMMARY.md. Several scripts write files; use a disposable checkout.
+This public tree contains five selected verifier programs and a chunked exact C5 certificate. GitHub Actions separates exact arithmetic, independent replay, manifest integrity, regression tests and 16 deterministic certificate shards. It uses public Ubuntu runners, commit-pinned actions, read-only repository permissions and explicit job timeouts below six hours. Uploaded artifacts are generated public certificate shards. No credentials are required. Each PASS establishes only the finite checks implemented; it does not prove the open arithmetic or zero-side claims. See REPRODUCIBILITY.md and VERIFICATION_SUMMARY.md. Several scripts write files; use a disposable checkout.
 
-The dependency map and OPEN/CONDITIONAL boundaries are in [the frontier status](notes/WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md). The source research repository dates to 2026-10-03. This separate public repository has its own creation date and fresh history. The manifest records selected source filenames and public-file hashes, without exposing or carrying over private Git history. No private working materials, local attachment index, offline audit archive, or upstream A1294 source is included.
+The dependency map and OPEN/CONDITIONAL boundaries are in [the frontier status](notes/WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md). The manifest records selected source paths and SHA-256 hashes. Upstream Git history, attachment indexes, offline archives and unrelated source material are not included.
 
 ## Rights
 
