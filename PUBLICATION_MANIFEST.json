@@ -138,7 +138,7 @@
     {
       "path": "src/wp84_bounded_christoffel_consumer.py",
       "provenance": "public-frontier-checker-curated-and-corrected",
-      "sha256": "ac6873e21f98d6495c9e2710a2d841e247c1ddfcad0e39c2fb6ab4051a768f3c"
+      "sha256": "bcb016a043d3cb3bd4ed2100d7dd131bcaec56774afc657ff028c02371157474"
     },
     {
       "path": "src/wp84_c5_pointwise_supercritical_sign.py",

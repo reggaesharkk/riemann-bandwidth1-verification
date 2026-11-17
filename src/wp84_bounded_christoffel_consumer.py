@@ -8,8 +8,11 @@ Let P be the exact degree-3 Christoffel minimizer and g=P^2.  For delta>0,
 For x<=0, g>=1, hence F_delta>=1.
 For all real x, 0<=F_delta<=(1+1/delta)g.
 
-At delta=61 this gives a support-free >79% consumer while F_delta is bounded
-and has only six simple nonreal poles.
+At delta=61, the exact finite calculation gives a >79% candidate only
+for the pinned model moments and stated zero-side ledger. This is not a
+zeta-zero theorem: the arithmetic six-pole comparison and the prime-to-Weil
+and zero-side transfers remain OPEN. The bounded consumer has six simple
+nonreal poles.
 
 Exact algebra is SymPy rational; pole locations/residue norms are diagnostic
 floating-point summaries.
