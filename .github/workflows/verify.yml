@@ -29,6 +29,7 @@ jobs:
           python-version: "3.13"
       - run: python -m pip install --disable-pip-version-check -r requirements.txt
       - run: python src/wp84_functional_band_delta80_gate.py
+      - run: python src/wp84_bounded_christoffel_consumer.py
 
   independent-replay:
     runs-on: ubuntu-latest
