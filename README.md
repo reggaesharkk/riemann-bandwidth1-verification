@@ -8,13 +8,26 @@
 
 # Riemann Bandwidth-One Verification
 
-> Research status: strict >79% simple critical-line zeros remains OPEN. No unconditional theorem at this level is claimed.
-
 **Prince Upadhyay · Independent Research**
 
-I use this public repository to study bandwidth-one Weil-form certificates and finite-band prime-operator methods related to lower bounds on simple critical-line zeros of the Riemann zeta function. I curated the tree from selected public artifacts; upstream Git history, branches, pull-request data, working files, archive materials and unrelated source files were not transferred.
+What proportion of the nontrivial zeros of the Riemann zeta function lie on the critical line and have multiplicity one? I study this question through finite matrices built from primes and bandwidth-one Weil forms. **The target of strictly more than 79% simple critical-line zeros remains open.**
 
-> **The strict >79% simple-zero theorem is unproved and remains OPEN.** This repository makes no Riemann Hypothesis claim and no unconditional >79% claim.
+[WP84 milestones](#wp84-milestones) · [Project guide](#start-here) · [Mathematical status](#current-mathematical-status) · [Reproduction](#evidence-and-reproduction) · [Cite the archive](#cite-this-release)
+
+## WP84 milestones
+
+| Result | What the calculation establishes |
+| --- | --- |
+| Weighted truncation at radius 9,000 | For the specified Loewner matrices, keeping the displacement weights gives a smaller upper bound on the truncation error at radius **9,000** than the previous estimate at **12,000**. [Derivation, §9](notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md#9-weighted-displacement-estimate-and-a-radius-9000-arithmetic-target) |
+| Test of the relaxed sixth moment | At the relaxed reference moment vector, even the best cubic normalized at the threshold has mean square **635/6159 ≈ 0.103101**. This exceeds the fixed gate **K ≈ 0.102108**. Refitting that cubic alone cannot close the gap at this model endpoint. [Exact calculation, §10](notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md#10-radius-9000-the-signed-arithmetic-moment-budget) |
+
+**The next arithmetic step.** On the same radius-9,000 prime-matrix section, the required moment inequality can be written as $\limsup_{T\to\infty}(Q_T-\tfrac{100}{161}V_T)<\theta$, where $\theta\approx0.21560655$. Here $Q_T$ is the mean square of a cubic in the centered matrix, and $V_T$ is the variance of a quadratic in that matrix. The square completion is exact. An upper bound on this signed difference and the subsequent transfer to the zero count remain open. [Definitions and exact threshold, §11](notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md#11-same-section-square-completion-and-the-remaining-prime-sum-estimate)
+
+With the [repository dependencies](requirements.txt) installed, run the [exact checker](src/wp84_functional_band_delta80_gate.py) from the repository root:
+
+```sh
+python src/wp84_functional_band_delta80_gate.py
+```
 
 ## Cite this release
 
@@ -47,7 +60,7 @@ The **historical 68.820273% route is conditional**, not an established zero-prop
 
 The **79.627% figure is a model frontier**, not a theorem for zeta zeros. It comes from a finite model/reference moment calculation; the proposed values `mu5=1/36` and `mu6=34/135` are not established as actual same-section zeta moments.
 
-The original R=6000 high-product route still requires a negative saving exceeding `0.002057354918974498...`, plus transfer payments and strict slack; no such signed saving has been proved. A separate bounded rational-consumer route gives a model-moment candidate coefficient `671891/847351` (about 79.2931%), but the weighted six-pole comparison for the arithmetic matrices remains OPEN. Both routes still require matching prime-to-Weil/source normalization and the zero-side transfer. The high-product first-alias analysis found that existing norm/divisor bounds lose about `X^(1/10)` in the critical window; that is a limitation of those estimates, not a counterexample to the underlying arithmetic inequality. See the [bounded-consumer candidate](notes/WP84_BOUNDED_CHRISTOFFEL_CONSUMER.md) and [frontier audit](notes/WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md) for their distinct proof gates.
+The original R=6000 high-product route still requires a negative saving exceeding `0.002057354918974498...`, plus transfer payments and strict slack; no such signed saving has been proved. A separate bounded rational-consumer route gives the original model coefficient `671891/847351` (about 79.2931%). Applying Jensen’s inequality to the same six-pole function gives `336653/424383` (about 79.32764%) under the pinned moments. The arithmetic comparison remains open. Both routes still require matching prime-to-Weil/source normalization and the zero-side transfer. The high-product first-alias analysis found that existing norm/divisor bounds lose about `X^(1/10)` in the critical window; that is a limitation of those estimates, not a counterexample to the underlying arithmetic inequality. See the [bounded-consumer candidate](notes/WP84_BOUNDED_CHRISTOFFEL_CONSUMER.md) and [frontier audit](notes/WP84_RESEARCH_FRONTIER_PUBLICATION_STATUS.md) for their distinct proof gates.
 
 The publication audit ranks: (1) curvature-controlled discrete Loewner band truncation; (2) interval-certified finite-filter fourth-cumulant sign counterexamples; (3) alias-uniform quadratic prime correlations and same-section moments; (4) simultaneous good-section endpoint selection and weighted reprojection; and (5) a finite-block Gaussian Loewner sixth-moment certificate. Their scoped statements, proof locations, verifications, literature comparisons and novelty limits are documented in notes/WP84_PUBLICATION_READINESS_AUDIT.md. Priority and novelty remain unresolved. Candidate 1 is a potential standalone paper topic, not a cleared novelty claim.
 
