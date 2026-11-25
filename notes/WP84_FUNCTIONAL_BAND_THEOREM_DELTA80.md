@@ -303,3 +303,55 @@ See:
     notes/WP84_FIXED_BAND_CHRISTOFFEL_SQUARE_FALLBACK.md
     notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md
     notes/WP84_R2_RESOLVENT_TAIL_O1_OVER_R.md
+
+## 9. Weighted displacement estimate and a radius-9000 arithmetic target
+
+Keep the setup and normalization of sections 1–4, with integer radius
+$R\ge1$, $D_{ii}=i$, and normalized trace $\tau$. Define $B_{ij}=
+(\Delta_R)_{ij}/(j-i)$ for $|i-j|>R$, and zero elsewhere. In the linear
+trace term the factor $j-i$ is supplied by $[D,f'(H_R)]_{ji}$.
+For each positive displacement $k$, the finite sum of
+$|\alpha_i-\alpha_{i+k}|^2$ over admissible indices is at most
+$4\Vert\alpha\Vert_2^2$. Counting both orientations gives
+
+$$
+\frac{\Vert B\Vert_F^2}{d}
+\le \frac{8q_\alpha}{\pi^2}
+\sum_{k>R}k^{-4}
+\le \frac{8q_\alpha}{3\pi^2R^3}.
+$$
+
+The last inequality integrates the decreasing function $x^{-4}$ from $R$
+to infinity. Apply Hilbert–Schmidt Cauchy–Schwarz to $B$ and
+$[D,f'(H_R)]$, then apply section 3's commutator bound and section 1's
+estimate for $[D,H_R]$. The linear term costs at most
+$8 q_\alpha M_2/(\sqrt{3}\pi^2R)$.
+Adding section 2's Taylor remainder gives the finite-dimensional estimate
+
+$$
+|\tau f(H)-\tau f(H_R)|
+\le \frac{4q_\alpha M_2}{\pi^2 R}(1+2/\sqrt{3}).
+$$
+
+For the retained field, take $T$ to infinity at fixed $R$ so that
+$q_\alpha=1/4+o(1)$. Use section 5's Sturm bound $M_2<72$,
+$1/\sqrt3<26/45$ and $\pi>333/106$. The resulting limsup charge is at most
+$C/R$, where $C=8719136/554445$. At $R=9000$ this charge is smaller
+than the original $C_{80}/12000$.
+
+Let $y=21/200-C/9000$. By monotonicity and concavity of
+$h_{80}(t)=81t/(80+t)$ on the nonnegative half-line, a sufficient
+**open arithmetic inequality** is now
+
+$$
+\limsup_{T\to\infty}\tau P(H_{9000})^2
+< h_{80}^{-1}(y)
+=\frac{41218511120}{403675173611}.
+$$
+
+The right side exceeds the pinned mean by
+$1365967308355/5607451836630401$, approximately 0.000243599.
+The old radius-12000 allowance was approximately 0.000167793.
+These thresholds concern different band matrices. The estimate reduces
+the analytic truncation cost. A proof for the prime matrix at the chosen
+radius and the required zero-side transfers are still needed.

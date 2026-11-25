@@ -68,6 +68,20 @@ def main():
     assert allowance==F(2323187935,13845573193397)
     assert allowance>0
 
+    # Retaining the displacement weight in the linear term saves sqrt(3).
+    inv_sqrt3_upper = F(26, 45)
+    assert 3 * inv_sqrt3_upper**2 > 1
+    weighted_constant = 72 * (1 + 2 * inv_sqrt3_upper) / pi_lo**2
+    assert weighted_constant == F(8719136, 554445)
+    weighted_charge = weighted_constant / 9000
+    assert weighted_charge < charge
+    weighted_y = ceiling - weighted_charge
+    weighted_threshold = 80 * weighted_y / (81 - weighted_y)
+    assert weighted_threshold == F(41218511120, 403675173611)
+    assert weighted_threshold - w0 == F(1365967308355, 5607451836630401)
+    assert weighted_threshold > square_ceiling
+    print("weighted R=9000 arithmetic target (open): square <", weighted_threshold)
+
     print("STURM_PLUS_REAL_ROOTS = 0")
     print("STURM_MINUS_REAL_ROOTS = 0")
     print("GLOBAL_CURVATURE_BOUND: |F80''| < 72")

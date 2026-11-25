@@ -38,7 +38,7 @@
     {
       "path": "notes/WP84_BOUNDED_CHRISTOFFEL_CONSUMER.md",
       "provenance": "public-frontier-candidate-curated-with-scope-limits",
-      "sha256": "947cd4856c828e2a8751e84f4cdf8f12c7414b43adaac130beb445805d0e0398"
+      "sha256": "ceddbeb2acf0bc27c2aaff53a2f30731d455f163d57b61b6ff87ee88283b001a"
     },
     {
       "path": "notes/WP84_C5_POINTWISE_SUPERCRITICAL_SIGN.md",
@@ -62,7 +62,7 @@
     },
     {
       "path": "notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md",
-      "sha256": "91562570e8692b964fb2c28b001b16885a1ed3d5b7a5803dd886f0fb6e8e7726",
+      "sha256": "ac377f76403aa98949a83268f6cfeccd384fefea2f45ecef19b9142c08055708",
       "provenance": "prepared-publication-document"
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "path": "RESEARCH_STATUS.md",
-      "sha256": "7c2e9b89065ea883277e2aa475ecefd3a0a71d681a166427b8d9a6d7830073c4",
+      "sha256": "8d0ccd27acef1d80f0a320aeafa836fe30eebf7d0a235540f27c22fa367f1ff2",
       "provenance": "prepared-publication-document"
     },
     {
@@ -138,7 +138,7 @@
     {
       "path": "src/wp84_bounded_christoffel_consumer.py",
       "provenance": "public-frontier-checker-curated-and-corrected",
-      "sha256": "bcb016a043d3cb3bd4ed2100d7dd131bcaec56774afc657ff028c02371157474"
+      "sha256": "24e10f6dc216276dd7e5df0f1a9818350fb7da9a4114472508a68a9de5a8fc3a"
     },
     {
       "path": "src/wp84_c5_pointwise_supercritical_sign.py",
@@ -157,7 +157,7 @@
     },
     {
       "path": "src/wp84_functional_band_delta80_gate.py",
-      "sha256": "602b981993ce50ae4f9862c14be527d66935c7d5151f18f29b55aeee3a4c48f4",
+      "sha256": "a037e0c64456e1db239e887e8320a7d0ae3f57165c168440774e2b6acbd75d02",
       "provenance": "prepared-publication-document"
     },
     {
