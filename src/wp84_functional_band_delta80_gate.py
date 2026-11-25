@@ -5,7 +5,8 @@ Checks:
   * exact rational expression for F_80'';
   * global |F_80''|<72 by exact Sturm root counts;
   * rational pi lower bound;
-  * R=12000 consumer margin and induced square threshold.
+  * radius-12000 and weighted radius-9000 thresholds;
+  * the relaxed moment obstruction and the signed square completion.
 """
 
 from fractions import Fraction as F
@@ -81,6 +82,42 @@ def main():
     assert weighted_threshold - w0 == F(1365967308355, 5607451836630401)
     assert weighted_threshold > square_ceiling
     print("weighted R=9000 arithmetic target (open): square <", weighted_threshold)
+
+    # Center H at 1 and isolate the exact joint arithmetic moment budget.
+    coefficients = list(reversed(sp.Poly(P.subs(x, 1 + x)**2, x).all_coeffs()))
+    denominator = 192959881
+    assert [v * denominator for v in coefficients] == [
+        2229049, -8958000, -17049864, 81188760, 18148176, -168547680, 93315600
+    ]
+    moments = [1, 0, F(1, 3), 0, F(1, 4), F(1, 36), F(157, 630)]
+    assert sum(a*b for a, b in zip(coefficients, moments)) == w0
+    assert 0 < -coefficients[2] / (pi_lo**2 * 9000) < F(1, 10**6)
+    sixth_ceiling = moments[6] + (weighted_threshold - w0) / coefficients[6]
+    assert sixth_ceiling == F(209030582803919701, 837093134013658480)
+    moments[6] = F(34, 135)
+    assert sum(a*b for a, b in zip(coefficients, moments)) == F(59707895, 578879643)
+    hankel = sp.Matrix(4, 4, lambda i, j: moments[i+j])
+    assert [hankel[:k, :k].det() for k in range(1, 5)] == [
+        1, F(1, 3), F(5, 108), F(127, 46656)
+    ]
+    at_minus_one = sp.Matrix([1, -1, 1, -1])
+    best_square = 1 / at_minus_one.dot(hankel.inv() * at_minus_one)
+    assert best_square == F(635, 6159) > weighted_threshold
+    print("relaxed model: minimum normalized cubic square =", best_square)
+
+    # Expand the two squares before integrating against the spectral law.
+    y = sp.symbols("y", real=True)
+    B, G = 93315600, 57960000
+    a, b = F(727, 805), F(676573, 966000)
+    signed_poly = sum(denominator * coefficients[k] * y**k for k in range(3, 7))
+    completed = B*(y**3-a*y**2)**2 - G*(y**2-b*y)**2 + G*b*b*y*y
+    assert sp.expand(completed - signed_poly) == 0
+    assert F(G, B) == F(100, 161)
+    sharp_offset = 18148176*F(1, 4) - 168547680*F(1, 36) + B*F(157, 630)
+    assert sharp_offset == 23110004
+    sharp_Q = F(157, 630) - 2*a*F(1, 36) + a*a*F(1, 4)
+    assert F(402, 1000) < sharp_Q < F(404, 1000)
+    print("R9000_SIGNED_SQUARE_IDENTITY_PASS; prime-matrix bound OPEN")
 
     print("STURM_PLUS_REAL_ROOTS = 0")
     print("STURM_MINUS_REAL_ROOTS = 0")

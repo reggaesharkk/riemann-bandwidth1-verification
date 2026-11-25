@@ -62,7 +62,7 @@
     },
     {
       "path": "notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md",
-      "sha256": "ac377f76403aa98949a83268f6cfeccd384fefea2f45ecef19b9142c08055708",
+      "sha256": "3e61d3dd6a1b45097c9b09127acc47b188a0cb73e1cd22ea45a6c058ae1f5df1",
       "provenance": "prepared-publication-document"
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "path": "RESEARCH_STATUS.md",
-      "sha256": "8d0ccd27acef1d80f0a320aeafa836fe30eebf7d0a235540f27c22fa367f1ff2",
+      "sha256": "04bbf27c989c9afb3780ff339e8ca129cdcb6ec32a55c85a7ee60e5aad96c8f6",
       "provenance": "prepared-publication-document"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "path": "src/wp84_functional_band_delta80_gate.py",
-      "sha256": "a037e0c64456e1db239e887e8320a7d0ae3f57165c168440774e2b6acbd75d02",
+      "sha256": "29d258e1bcb70363aafe6094ede100fad2123a9fb3ed323a23f0a70ff357d429",
       "provenance": "prepared-publication-document"
     },
     {

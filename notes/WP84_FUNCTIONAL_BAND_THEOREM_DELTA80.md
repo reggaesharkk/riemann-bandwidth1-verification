@@ -355,3 +355,96 @@ The old radius-12000 allowance was approximately 0.000167793.
 These thresholds concern different band matrices. The estimate reduces
 the analytic truncation cost. A proof for the prime matrix at the chosen
 radius and the required zero-side transfers are still needed.
+
+## 10. Radius 9000: the signed arithmetic moment budget
+
+Put Y = H_9000 - I, m_j = tau(Y^j), and use the same prime normalization
+and section as in the [second-moment calculation](WP84_THIRD_AWARE_SAME_SECTION_THEOREM_OR_OBSTRUCTION.md).
+Let K = 41218511120/403675173611 from section 9 and w = 1415/13891.
+Expand P(1+y)^2 with common denominator D = 192959881. In ascending order
+the seven integer numerators are
+
+    2229049, -8958000, -17049864, 81188760, 18148176, -168547680, 93315600.
+
+The sharp reference vector through degree six is
+(1, 0, 1/3, 0, 1/4, 1/36, 157/630). Substitution gives w exactly.
+At fixed R the first moment is o(1) and the variance is
+1/3 - v_R + o(1), where v_R = sum_{k>R} k^(-2)/pi^2.
+Consequently the open square inequality in section 9 is equivalent, under
+these two same-section inputs, to the following one-sided joint bound:
+
+    limsup [81188760 m3 + 18148176 (m4-1/4)
+            - 168547680 (m5-1/36) + 93315600 (m6-157/630)]
+      < D (K-w) - 17049864 v_9000.
+
+The variance debit in square units is positive and less than 0.000001,
+using v_R < (106/333)^2/R. The remaining four moments must refer to
+the same section. Their individual limits need not exist.
+
+### Can the relaxed sixth moment close this particular square gate?
+
+First grant the reference values of moments three through five and even
+remove the variance debit. The required sixth moment is then strictly below
+209030582803919701/837093134013658480 (about 0.24971007).
+The relaxed reference ceiling 34/135 is about 0.25185185.
+At that endpoint the original square has mean 59707895/578879643, above K.
+The actual finite-band variance debit further tightens the threshold.
+
+There is also a coefficient-independent diagnostic at this relaxed moment
+vector. Form the 4 by 4 Hankel matrix M with entries m_(i+j) for indices
+0 through 3, using the sharp reference through degree five and 34/135 at
+degree six. Its leading minors are 1, 1/3, 5/108, 127/46656.
+For v = (1,-1,1,-1), the minimum of c^t M c subject to c^t v = 1 is
+1/(v^t M^(-1)v) = 635/6159, strictly above K. This follows by
+Cauchy–Schwarz in the M inner product, with equality for c proportional
+to M^(-1)v. Even freely refitting a cubic normalized at y=-1 misses the
+**same numerical threshold** for this model vector. Changing the bounded
+consumer would require a fresh curvature and band calculation.
+
+This isolates the missing arithmetic information. A sufficiently small
+sixth moment, or a compensating signed gain from moments three through
+five, would advance this route. The model calculation supplies neither
+an actual prime-matrix counterexample nor a bound on zeta-zero multiplicity.
+
+## 11. Same-section square completion and the remaining prime-sum estimate
+
+Let S be the centered combination inside the limsup in section 10. Use the
+same normalized trace and matrix Y throughout. Put
+
+    B = 93315600,  G = 57960000,  a = 727/805,  b = 676573/966000,
+    Q = tau[(Y^3-a Y^2)^2],
+    V = tau[(Y^2-b Y-(m2-b m1)I)^2].
+
+Expanding the first square gives the fifth-degree coefficient -2Ba and
+the fourth-degree coefficient Ba^2. The remaining fourth-degree
+coefficient is -G. Completing its square together with 2Gb Y^3 and
+centering Y^2-bY gives the finite identity
+
+    S = B Q - G V + G [b^2 m2 - (m2-b m1)^2] - 23110004.
+
+Here 23110004 is the reference offset from section 10, and G/B = 100/161.
+Put s = 1/3 - v_9000. Using the established first two moments, the exact
+threshold for the signed difference is
+
+    theta = [D(K-w) - 17049864 v_9000 + 23110004 - G(b^2 s-s^2)] / B.
+    limsup [Q - (100/161)V] < theta.                 (open)
+
+Numerically theta is about 0.21560655. Discarding the nonpositive term
+would require Q alone to satisfy this threshold. Even the sharp reference
+vector gives Q about 0.403. The difference retains information that the
+separate upper bound loses.
+
+For ordinary-prime words, each frequency is the logarithm of a rational
+number. The sum of its signed prime exponents has the same parity as the
+word length, including after opposite-sign pairs cancel. Unique
+factorization therefore separates the exact frequencies at degrees five
+and six. This observation allows cancellation between their aggregate
+weighted sums but supplies no equality between individual frequencies.
+Near aliases can contribute through the finite averaging kernel.
+
+The [same-section cubic analysis, section 5](WP84_THIRD_AWARE_SAME_SECTION_THEOREM_OR_OBSTRUCTION.md)
+identifies the surviving three-distinct-prime nonzero aliases and tails.
+At a new fixed radius the closed-path count depends on that radius.
+The first two moments and the square identity supply no upper estimate
+for this cubic contribution or for the combined signed residual.
+The arithmetic bound and its transfer to the simple-zero count remain open.
