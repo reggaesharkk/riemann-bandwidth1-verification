@@ -413,3 +413,61 @@ higher-degree terms still enter the same-section target. Near the second
 same-sign alias u≈X² the kernel can be of order one for O(X) consecutive
 integers, each with weight of order 1/X under this majorant. The first-alias
 argument alone gives no vanishing bound there.
+
+## Sieve refinement at the first mixed and second same-sign aliases
+
+Keep the preceding addendum's fixed radius, natural prime cutoff, section,
+entry weights and sampled kernel. Write L=log X. Two further cubic
+subpopulations have absolute contributions tending to zero:
+
+1. Same signs, with |pqr−X²| ≤ X exp(√L).
+2. Mixed signs, with X/2 ≤ p₁p₂/q ≤ 2X and q ≤ √X √L.
+
+The rate O_R(L^(-1/4)) suffices for each. The proof applies uniformly as
+real X tends to infinity, including resonances.
+
+**Short-interval input.** Write Ω(u) for the number of prime factors with
+multiplicity. Set f(u)=4^(-Ω(u)). This completely multiplicative function
+takes values in (0,1], so it satisfies both growth hypotheses of Shiu's
+short-interval theorem. Use modulus one and any fixed 0<η<1. Mertens'
+prime reciprocal estimate bounds exp(sum_{p≤x} f(p)/p) by O((log x)^(1/4)).
+Since the indicator of Ω(u)=k is at most 4^k f(u), for k=2,3 we obtain
+
+    #{x<u≤x+y : Ω(u)=k} ≪_η y/(log x)^(3/4),   x^η ≤ y ≤ x.
+
+See [Nair and Tenenbaum, *Short sums of certain arithmetic functions*,
+Acta Math. 180 (1998), §1, statement of Shiu's theorem](https://tenenb.perso.math.cnrs.fr/PPP/ShortSums.pdf).
+Prime cutoffs and distinctness only reduce this counting majorant. It is
+applied to absolute values after grouping by product. Each triple product
+has at most six orderings and each two-prime numerator at most two.
+
+**Second same-sign alias.** Write u=pqr, H=|u−X²|. Throughout the indicated
+window u is comparable to X² because exp(√L)=o(X). The entry weight is
+O(1/X). The normalized root kernel is at most min(1,CX/H), by
+|log(u/X²)| ≫ H/X² and T=2πX, with the bound 1 at H=0.
+The core H≤X contains O(X/L^(3/4)) eligible integers by the interval
+estimate. For each dyadic shell h<H≤2h with h≥X the two component
+intervals contain O(h/L^(3/4)) eligible integers. Their total weighted
+contribution per shell is O(L^(-3/4)). A partial last shell may be enlarged
+to the full shell. All lengths satisfy the theorem with η=1/8 and
+endpoints comparable to X². There are O(1+√L) shells. This proves (1).
+
+**Mixed first alias.** For prime q≤X^(1/4) the preceding elementary bound
+is O_R(X^(-1/4)(1+L)). For X^(1/4)<q≤Q=√X√L fix q. The numerator
+u=p₁p₂ has weight, including q, at most C/(q√X). Put H=|u−Xq|.
+The kernel is at most min(1,Cq/H). Cover H≤q and the dyadic shells
+h<H≤2h (q≤h≤Xq) inside [Xq/2,2Xq]. On either side a truncated shell
+can be covered by O(1) intervals of length comparable to h with endpoints
+comparable to Xq; at macroscopic lengths use intervals of length at most
+Xq/4. The core uses intervals of length q. These lengths exceed
+(2Xq)^(1/8) for large X. Shiu gives O(q/L^(3/4)) eligible integers
+in the core and O(h/L^(3/4)) per shell. Thus the O(1+L) shells plus
+the core cost O(L^(1/4)/√X) per q. The elementary prime counting upper
+bound gives O(Q/log Q) denominator primes. The resulting total is
+O_R(L^(-1/4)), proving (2).
+
+**What is still missing.** For example, extending the same-sign estimate
+to |u−X²| of order X² would incur O(L) shells, giving only O_R(L^(1/4))
+by this proof. Mixed denominators beyond √X√L, other tails, and the
+joint signed higher moments also remain. These estimates alone do not
+yield the required upper bound on the full prime-matrix statistic.
