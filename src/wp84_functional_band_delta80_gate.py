@@ -82,6 +82,28 @@ def main():
     assert weighted_threshold > square_ceiling
     print("weighted R=9000 arithmetic target (open): square <", weighted_threshold)
 
+    # Center H at 1 and isolate the exact joint arithmetic moment budget.
+    coefficients = list(reversed(sp.Poly(P.subs(x, 1 + x)**2, x).all_coeffs()))
+    denominator = 192959881
+    assert [v * denominator for v in coefficients] == [
+        2229049, -8958000, -17049864, 81188760, 18148176, -168547680, 93315600
+    ]
+    moments = [1, 0, F(1, 3), 0, F(1, 4), F(1, 36), F(157, 630)]
+    assert sum(a*b for a, b in zip(coefficients, moments)) == w0
+    assert 0 < -coefficients[2] / (pi_lo**2 * 9000) < F(1, 10**6)
+    sixth_ceiling = moments[6] + (weighted_threshold - w0) / coefficients[6]
+    assert sixth_ceiling == F(209030582803919701, 837093134013658480)
+    moments[6] = F(34, 135)
+    assert sum(a*b for a, b in zip(coefficients, moments)) == F(59707895, 578879643)
+    hankel = sp.Matrix(4, 4, lambda i, j: moments[i+j])
+    assert [hankel[:k, :k].det() for k in range(1, 5)] == [
+        1, F(1, 3), F(5, 108), F(127, 46656)
+    ]
+    at_minus_one = sp.Matrix([1, -1, 1, -1])
+    best_square = 1 / at_minus_one.dot(hankel.inv() * at_minus_one)
+    assert best_square == F(635, 6159) > weighted_threshold
+    print("relaxed model: minimum normalized cubic square =", best_square)
+
     print("STURM_PLUS_REAL_ROOTS = 0")
     print("STURM_MINUS_REAL_ROOTS = 0")
     print("GLOBAL_CURVATURE_BOUND: |F80''| < 72")

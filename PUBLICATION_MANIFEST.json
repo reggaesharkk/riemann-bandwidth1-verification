@@ -62,7 +62,7 @@
     },
     {
       "path": "notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md",
-      "sha256": "ac377f76403aa98949a83268f6cfeccd384fefea2f45ecef19b9142c08055708",
+      "sha256": "ca78223fe25de827dcfd1be1a369b392c742bd44f12a68fe5c237c188d9ef8cb",
       "provenance": "prepared-publication-document"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "path": "src/wp84_functional_band_delta80_gate.py",
-      "sha256": "a037e0c64456e1db239e887e8320a7d0ae3f57165c168440774e2b6acbd75d02",
+      "sha256": "e846701bfae87a84d8d5e2f63489f40e987c0027bba0720c18a054915b3085cc",
       "provenance": "prepared-publication-document"
     },
     {
