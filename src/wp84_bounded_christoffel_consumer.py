@@ -53,6 +53,18 @@ def main():
     assert simple_floor==sp.Rational(671891,847351)
     assert simple_floor>sp.Rational(79,100)
 
+    # Exact concave tangent majorant at the pinned mean of P squared.
+    t = sp.symbols("t", nonnegative=True)
+    h = (delta + 1) * t / (delta + t)
+    jensen_cap = h.subs(t, w0)
+    tangent = jensen_cap + sp.diff(h, t).subs(t, w0) * (t - w0)
+    gap = delta * (delta + 1) * (t - w0)**2 / ((delta + w0)**2 * (delta + t))
+    assert sp.cancel(tangent - h - gap) == 0
+    assert jensen_cap == sp.Rational(43865, 424383) < neg_cap
+    assert 1 - 2 * jensen_cap == sp.Rational(336653, 424383)
+    print("Jensen model cap =", jensen_cap)
+    print("one-sided comparison allowance for section 8 =", neg_cap - jensen_cap)
+
     # Partial fractions: F=(delta+1)+sum c_j/(x-z_j),
     # c_j=-delta(delta+1)/(2 P(z_j) P'(z_j)).
     roots=[complex(r) for r in sp.nroots(D.as_expr(),n=50,maxsteps=200)]

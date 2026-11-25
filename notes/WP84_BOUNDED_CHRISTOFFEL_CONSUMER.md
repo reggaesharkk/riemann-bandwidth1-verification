@@ -98,6 +98,30 @@ This remains a model/conditional frontier candidate, not a proved zeta-zero prop
 It deliberately sacrifices part of the 79.627% polynomial optimum in exchange
 for bounded functional calculus.
 
+### 3.1. Jensen refinement at the same six poles
+
+The [delta=80 band note](WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md) already
+uses Jensen's inequality. Its specialization here preserves the six poles of
+section 4. Write $h(t)=62t/(61+t)$ and $w=1415/13891$. For every $t\ge0$,
+
+$$
+h(w)+h'(w)(t-w)-h(t)
+=\frac{62\cdot61(t-w)^2}{(61+w)^2(61+t)}.
+$$
+
+Integrating at $t=P(x)^2$ cancels the linear term under the pinned moments.
+Thus the negative-half-line mass is at most the expectation of $F_{61}$,
+which is at most $h(w)=43865/424383$. The model ledger gives
+$1-2h(w)=336653/424383$ (about 79.32764%). This bounds the rational
+consumer in the pinned model. The polynomial bound in section 1 remains
+stronger for the model mass itself.
+
+For any fixed comparison law with those moments, a sufficient one-sided
+error budget for the **original section 8 target** is
+$87730/847351-43865/424383$: if the limsup of the arithmetic trace minus
+the comparison-law expectation is at most this difference, section 8 follows.
+No such comparison estimate is established here.
+
 ## 4. Resolvent representation
 
 The denominator

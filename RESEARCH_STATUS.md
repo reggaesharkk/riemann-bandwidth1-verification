@@ -14,6 +14,8 @@ The historical R=400 consumer is a conditional **68.820273% route**. Its finite-
 
 A separate fixed-parameter bounded rational consumer has an exact moment-law cap for the pinned model moments and yields a candidate coefficient `671891/847351` (about 79.2931%). The six-pole comparison for arithmetic matrices is OPEN; this candidate does not identify model moments with actual zeta-prime data.
 
+The [bounded-consumer note, §3.1](notes/WP84_BOUNDED_CHRISTOFFEL_CONSUMER.md) sharpens the delta=61 model ledger to 336653/424383 under the pinned moments. The [weighted band estimate, §9](notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md) gives an explicit delta=80 square threshold at radius 9000. Proving the arithmetic square bound remains open.
+
 ## Open obligations
 1. Prove a sufficiently negative source-weighted joint signed third/fifth/sixth high-product residual with R=6000, the natural cutoff, original masks and aliases retained. The frozen sufficient inequality requires a negative saving exceeding 0.002057354918974498..., plus transfer payments and strict slack. In the cubic first-alias window `U ~ X^(8/5)`, `V ~ X^(3/5)`, `v > sqrt(X)/L^3`, existing norm/divisor estimates lose about `X^(1/10)`. The zero-frequency component also remains unresolved. These are limitations of the audited methods, not counterexamples to the target inequality.
 2. Complete prime-to-Weil identification and source-normalization payments on the same selected section.
