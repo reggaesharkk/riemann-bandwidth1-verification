@@ -358,3 +358,58 @@ packet hashes. Eight hostile mutations reject consumer/R changes, incorrect
 double credit, prime-to-zeta promotion, and unsupported third or >79 claims.
 The note supplies the analytic proofs; rational replays do not prove the
 remaining alias/tail estimate.
+
+## Fixed-radius addendum: two absolute estimates in the cubic remainder
+
+Keep the ordinary-prime source, cutoff and root section of §5, with any
+fixed integer radius R (in particular 9000). Write X=T/(2π), L=log X and
+N=floor(exp(L−√L)). The estimates below are for subpopulations of the
+original sum. Their complements must remain in the arithmetic ledger.
+
+For each fixed path, the absolute value of the product of the three entry
+weights is at most C/(pqr)^(1/2). Indeed log p/L ≤ 1, the Fourier factors
+of §5 are bounded, the displacement phases have modulus one, and the
+normalization tends to one. Once the signs are fixed there are O_R(1)
+paths. For t=dist(λ,Lℤ) ≤ L/2 the finite root sum satisfies
+
+    |K(λ)| ≤ min(1, C/(T t)),
+
+using n/d → 1, the geometric sum and sin(πt/L) ≥ 2t/L. Use the bound 1
+at t=0. These estimates preserve the original root interval and allow
+arbitrary real X tending to infinity.
+
+**Same signs.** The whole all-distinct same-sign contribution with
+u=pqr ≤ N² is o(1), even in absolute value. It includes the entire first
+alias cell L/2 ≤ |λ| ≤ 3L/2 for sufficiently large X. For one sign and
+one path, unique factorization gives at most six ordered triples for
+each positive integer u. Split the sum as follows.
+
+- For X/2 ≤ u ≤ 2X, t=|log(u/X)| ≥ |u−X|/(2X) for large X.
+  The integer(s) within distance one of X contribute O(X^(-1/2)).
+  Summing the remaining reciprocal distances in unit shells costs
+  O(X^(-1/2) log X), uniformly even when X is an integer.
+- Outside this window, 2 ≤ u ≤ N² implies log u ≥ log 2 and
+  2L−log u ≥ 2√L. Its distance from L is at least log 2, so t ≥ log 2.
+  Summing u^(-1/2)/T up to N² costs O(N/T).
+
+Thus the bound including both signs and all paths is
+O_R(X^(-1/2) log X + N/T). The first term includes the full coefficient
+at exact resonance. No cancellation of carrier phases is needed.
+
+**Mixed signs near the first alias.** Orient λ=log(u/q) with u=p₁p₂.
+In the window X/2 ≤ u/q ≤ 2X, retain q ≤ Q. At fixed q each integer u
+has at most two ordered prime factorizations. The coefficient bound is
+O(1/(q√X)), and the kernel bound is min(1,Cq/|u−Xq|).
+The O(q) nearest integers and the remaining harmonic sum together cost
+O(q(1+log X)) before the coefficient weight: on this window the largest
+distance is at most Xq. Therefore the absolute contribution is
+O_R(Q(1+log X)/√X), also for the opposite signs by reflection.
+In particular Q=√X/L² makes this part o(1).
+
+The same-sign residual can now be restricted to u>N². The displayed
+mixed-sign estimate removes only its stated near-alias window and small
+denominators. Large denominators, untreated tails, and the signed
+higher-degree terms still enter the same-section target. Near the second
+same-sign alias u≈X² the kernel can be of order one for O(X) consecutive
+integers, each with weight of order 1/X under this majorant. The first-alias
+argument alone gives no vanishing bound there.
