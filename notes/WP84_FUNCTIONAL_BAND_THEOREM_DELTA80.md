@@ -405,3 +405,46 @@ This isolates the missing arithmetic information. A sufficiently small
 sixth moment, or a compensating signed gain from moments three through
 five, would advance this route. The model calculation supplies neither
 an actual prime-matrix counterexample nor a bound on zeta-zero multiplicity.
+
+## 11. Same-section square completion and the remaining prime-sum estimate
+
+Let S be the centered combination inside the limsup in section 10. Use the
+same normalized trace and matrix Y throughout. Put
+
+    B = 93315600,  G = 57960000,  a = 727/805,  b = 676573/966000,
+    Q = tau[(Y^3-a Y^2)^2],
+    V = tau[(Y^2-b Y-(m2-b m1)I)^2].
+
+Expanding the first square gives the fifth-degree coefficient -2Ba and
+the fourth-degree coefficient Ba^2. The remaining fourth-degree
+coefficient is -G. Completing its square together with 2Gb Y^3 and
+centering Y^2-bY gives the finite identity
+
+    S = B Q - G V + G [b^2 m2 - (m2-b m1)^2] - 23110004.
+
+Here 23110004 is the reference offset from section 10, and G/B = 100/161.
+Put s = 1/3 - v_9000. Using the established first two moments, the exact
+threshold for the signed difference is
+
+    theta = [D(K-w) - 17049864 v_9000 + 23110004 - G(b^2 s-s^2)] / B.
+    limsup [Q - (100/161)V] < theta.                 (open)
+
+Numerically theta is about 0.21560655. Discarding the nonpositive term
+would require Q alone to satisfy this threshold. Even the sharp reference
+vector gives Q about 0.403. The difference retains information that the
+separate upper bound loses.
+
+For ordinary-prime words, each frequency is the logarithm of a rational
+number. The sum of its signed prime exponents has the same parity as the
+word length, including after opposite-sign pairs cancel. Unique
+factorization therefore separates the exact frequencies at degrees five
+and six. This observation allows cancellation between their aggregate
+weighted sums but supplies no equality between individual frequencies.
+Near aliases can contribute through the finite averaging kernel.
+
+The [same-section cubic analysis, section 5](WP84_THIRD_AWARE_SAME_SECTION_THEOREM_OR_OBSTRUCTION.md)
+identifies the surviving three-distinct-prime nonzero aliases and tails.
+At a new fixed radius the closed-path count depends on that radius.
+The first two moments and the square identity supply no upper estimate
+for this cubic contribution or for the combined signed residual.
+The arithmetic bound and its transfer to the simple-zero count remain open.

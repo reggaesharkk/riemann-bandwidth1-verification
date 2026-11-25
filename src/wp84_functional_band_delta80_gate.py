@@ -5,7 +5,8 @@ Checks:
   * exact rational expression for F_80'';
   * global |F_80''|<72 by exact Sturm root counts;
   * rational pi lower bound;
-  * R=12000 consumer margin and induced square threshold.
+  * radius-12000 and weighted radius-9000 thresholds;
+  * the relaxed moment obstruction and the signed square completion.
 """
 
 from fractions import Fraction as F
@@ -103,6 +104,20 @@ def main():
     best_square = 1 / at_minus_one.dot(hankel.inv() * at_minus_one)
     assert best_square == F(635, 6159) > weighted_threshold
     print("relaxed model: minimum normalized cubic square =", best_square)
+
+    # Expand the two squares before integrating against the spectral law.
+    y = sp.symbols("y", real=True)
+    B, G = 93315600, 57960000
+    a, b = F(727, 805), F(676573, 966000)
+    signed_poly = sum(denominator * coefficients[k] * y**k for k in range(3, 7))
+    completed = B*(y**3-a*y**2)**2 - G*(y**2-b*y)**2 + G*b*b*y*y
+    assert sp.expand(completed - signed_poly) == 0
+    assert F(G, B) == F(100, 161)
+    sharp_offset = 18148176*F(1, 4) - 168547680*F(1, 36) + B*F(157, 630)
+    assert sharp_offset == 23110004
+    sharp_Q = F(157, 630) - 2*a*F(1, 36) + a*a*F(1, 4)
+    assert F(402, 1000) < sharp_Q < F(404, 1000)
+    print("R9000_SIGNED_SQUARE_IDENTITY_PASS; prime-matrix bound OPEN")
 
     print("STURM_PLUS_REAL_ROOTS = 0")
     print("STURM_MINUS_REAL_ROOTS = 0")
