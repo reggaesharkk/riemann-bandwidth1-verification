@@ -471,3 +471,58 @@ to |u−X²| of order X² would incur O(L) shells, giving only O_R(L^(1/4))
 by this proof. Mixed denominators beyond √X√L, other tails, and the
 joint signed higher moments also remain. These estimates alone do not
 yield the required upper bound on the full prime-matrix statistic.
+
+## Retaining the prime weights in the cubic sieve
+
+Use the same ordinary-prime matrix, root section and fixed R as above.
+Let g be completely multiplicative, with g(p)=(log p)/L for p≤N and
+g(p)=0 otherwise. The source coefficient has absolute value
+g(p)/(|a_phi|√p). Since a_phi tends to one, its reciprocal is bounded.
+The path and Fourier factors in §5 are bounded uniformly at fixed R.
+
+**Uniform interval estimate.** The modulus-one uniformity observation
+in [Nair and Tenenbaum, §1(b)](https://tenenb.perso.math.cnrs.fr/PPP/ShortSums.pdf)
+is essential because g varies with X. Both growth bounds hold with
+constant one since 0≤g≤1. Moreover the weighted prime harmonic sum through
+any x is at most (1/L) times the sum of (log p)/p through N, which is O(1)
+by Mertens' estimate. Hence for fixed η and x^η≤y≤x,
+
+    sum_{x<u≤x+y} g(u) ≪_η y/log x.
+
+Original three-prime products have at most six orderings, and two-prime
+numerators at most two. Summing g over every integer in an interval thus
+majorizes the weighted source sum up to these fixed factors.
+
+**Same signs.** Set H=|pqr−X²|. For 0≤W=o(L), the absolute contribution of
+H≤X exp(W) is O_R((1+W)/L). Throughout, u=pqr is comparable to X².
+The coefficient is O(g(u)/X), and the kernel is O(min(1,X/H)), using
+1 at exact resonance. The core H≤X has weighted count O(X/L).
+Each shell h<H≤2h, h≥X, has weighted count O(h/L), so it costs O_R(1/L).
+There are O(1+W) shells, counting the last by enlargement. Their
+intervals satisfy the preceding length conditions with η=1/8.
+In particular W=L^(3/4) gives O_R(L^(-1/4)).
+
+**Mixed signs: width and denominator together.** Let u=p₁p₂ and H=|u−Xq|.
+Intersect X/2≤u/q≤2X with H≤q exp(W), where 0≤W≤L, and retain prime
+denominators q≤Q≤N. Then the absolute contribution is
+
+    O_R( X^(-1/4)(1+L) + Q(1+W)/(√X L²) ).
+
+For q≤X^(1/4) the earlier elementary estimate gives the first term.
+For larger q the core H≤q and the shells starting at h≥q lie at scale
+Xq. The intervals used in the preceding sieve proof satisfy η=1/8,
+since q>X^(1/4); clipped shells can use the same enlargements there.
+Their weighted counts are O(q/L) and O(h/L), respectively. Multiply by
+the coefficient factor O(g(q)/(q√X)) and the kernel bound O(min(1,q/H)).
+Each costs O_R(g(q)/(√X L)), with O(1+W) shells per q. Finally
+sum_{q prime≤Q} g(q) ≤ (1/L) sum_{q prime≤Q} log q ≪ Q/L by Chebyshev's
+bound. The reflected sign pattern satisfies the same estimate.
+
+At W=L the intersection covers the whole stated mixed first-alias window.
+Every Q=o(√X L) then gives o(1), and Q=√X L^(3/4) gives O_R(L^(-1/4)).
+For the narrower core H≤q, W=0 instead permits Q=√X L^(7/4) at the
+same rate. The latter cutoff applies only to that core.
+
+The argument gives no full-cell o(1) estimate at the second same-sign
+alias: O(L) shells at cost O_R(1/L) allow an order-one total. The outer
+mixed ranges and the full signed higher-moment gate still require estimates.
