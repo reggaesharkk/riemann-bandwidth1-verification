@@ -62,7 +62,7 @@
     },
     {
       "path": "notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md",
-      "sha256": "3e61d3dd6a1b45097c9b09127acc47b188a0cb73e1cd22ea45a6c058ae1f5df1",
+      "sha256": "95f43ee47594ff99ae50273f4c9b0f18be08315ca722761f6617506dbe93f64e",
       "provenance": "prepared-publication-document"
     },
     {
@@ -223,6 +223,11 @@
     {
       "path": "notes/WP84_MIXED_ALIAS_SMALL_DIVISORS.md",
       "sha256": "91e57b13446313c76b48c2ddfc3eaca26d6316c6e2a73e92b893d46fa39d0b83",
+      "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "notes/WP84_ZERO_COUNT_TRANSFER.md",
+      "sha256": "a4142e7c207b1ab95c2b4f9917af985e2da90d7046c943cfdf100e90bb4dd308",
       "provenance": "prepared-publication-document"
     }
   ]
