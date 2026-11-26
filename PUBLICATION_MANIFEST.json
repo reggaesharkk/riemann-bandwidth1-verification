@@ -111,6 +111,11 @@
       "provenance": "prepared-publication-document"
     },
     {
+      "path": "notes/WP84_MIXED_ALIAS_ADDITIVE.md",
+      "sha256": "8bc0029d48f0c370cdfdc35b06439baadb79b2e144c7df0d9d0e175e84162ab6",
+      "provenance": "prepared-publication-document"
+    },
+    {
       "path": "notes/WP84_THIRD_AWARE_SAME_SECTION_THEOREM_OR_OBSTRUCTION.md",
       "sha256": "a3680a4b83389ef9585c1f92244b6dcbddfa6aac6e7bcd224bc637cb47393df5",
       "provenance": "prepared-publication-document"
