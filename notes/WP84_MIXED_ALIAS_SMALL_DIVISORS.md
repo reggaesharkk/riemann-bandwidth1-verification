@@ -216,3 +216,62 @@ meets \(O(\log L)\) dyadic bands. It admits the explicit cutoff
 This exceeds the global product cutoff by \(L/\log L\).
 The remaining high-product terms in these bands still need a signed
 estimate.
+
+## Close prime ratios and the zero Poisson mode
+
+The number of close ratios in the top denominator range can be
+bounded below without a conjecture about prime quadruples. Fix dyadic
+blocks \(p\in[P,2P]\), \(q\in[Q_0,2Q_0]\), with
+\(P\asymp N\), \(Q_0\asymp N^2/X\), and with the two prime blocks
+disjoint for large \(X\). Write \(L=\log X\).
+The prime number theorem on fixed-ratio intervals gives
+\(K\gg P Q_0/L^2\) pairs. Their ratios \(p/q\) are distinct by
+unique factorization. For any fixed \(\eta>0\), partition their
+range into \(O_\eta(X)\) intervals of length
+\(\eta P/(Q_0 X)\). If the occupancies are \(k_i\), the number of
+ordered distinct pairs in the same interval is
+\(\sum_i k_i(k_i-1)\gg_\eta K^2/X\), by Cauchy–Schwarz and
+\(K/X\to\infty\). Each such pair satisfies
+\[
+0< |pq'-p'q|\le 4\eta P Q_0/X .
+\]
+This bound counts the pairs without invoking a short-interval
+equidistribution statement.
+
+For their kernels put \(a=sp/q\), \(b=sp'/q'\), and use
+\(G(v)=\int \rho(\xi)e(\xi v)\,d\xi\) from the additive reduction.
+For any positive \(a,b\), Plancherel gives the exact identity
+\[
+ \int_{\mathbb R}G(at-X)\overline{G(bt-X)}\,dt
+ =\frac{1}{b}\int \rho(\xi)\rho(a\xi/b)e\bigl(X(a/b-1)\xi\bigr)\,d\xi .
+\]
+This follows from matching the Fourier frequencies \(a\xi=b\xi'\).
+For the close ratios just counted, \(|X(a/b-1)|\ll\eta\).
+Choosing \(\eta\) small in terms of \(C\) makes the real part of
+the exponential at least \(1/2\) on the support. The integral of
+\(\rho(\xi)\rho(a\xi/b)\) is bounded below by a positive constant:
+\(\int\rho^2\ge1/C\), and the dilation changes \(\rho\) in \(L^1\)
+by \(O(|a/b-1|)\), using its uniformly bounded variation and compact
+support. Thus each of these unweighted cross integrals has real part
+\(\gg 1/b\). The same conclusion holds with a fixed smooth cutoff
+\(W(t/D_0)\) that equals one near both centers \(X/a\) and \(X/b\),
+with a margin comparable to \(D_0\asymp X/a\). The part modified by
+this cutoff has both kernel arguments of size \(\gg X\) and is
+\(o(1/b)\) by sinc decay.
+
+For a smooth compactly supported \(W\) the full Poisson identity
+for one pair has terms
+\[
+ D_0\iint \rho(\xi)\rho(\xi')e\bigl(X(\xi'-\xi)\bigr)
+ \widehat W\bigl(D_0(h-a\xi+b\xi')\bigr)\,d\xi\,d\xi',
+ \qquad h\in\mathbb Z,
+\]
+where \(\widehat W(y)=\int W(t)e(-yt)\,dt\). In particular, the
+zero mode for the full quadratic energy is the continuous weighted
+energy itself. A positive subfamily of its cross integrals alone
+gives no lower bound for that full mode or for the discrete energy.
+Other cross integrals and path coefficients may carry different
+signs. The nonzero modes can have support near
+\(h\in[a-Cb,Ca-b]\), an interval of length growing with \(a+b\)
+in the top blocks. Bounding those modes together with the remaining
+zero-mode terms is still required for a Cauchy–Schwarz argument.
