@@ -81,3 +81,58 @@ Absolute values here apply to each path/product **after** its row sum.
 No signed gain is assigned to this vanishing population. In particular,
 mixed-sign ratios near X with large denominator, and weighted fourth
 through sixth moments, are outside the conclusion.
+
+## Mixed-sign core: a lower bound for termwise absolute estimates
+
+Let X vary over the positive reals, T=2πX and n=floor(X log X). Consider
+the diagonal path (0,0,0) in the ordinary-prime cubic, with signs (+,+,-).
+For a triple (p,r,q) take the modulus of its coefficient times its kernel
+**after row averaging**. For an unbounded sequence of X, the sum of these
+moduli over distinct primes in the first-alias core |pr/q−X|≤1/100 is
+
+    ≫ X^(1/4)/(log X)^3.
+
+The statement holds even if at each X the row probabilities are chosen
+arbitrarily on the n consecutive rows. It concerns an absolute majorant;
+the carrier phases in the signed trace are still present.
+
+**1. A uniform kernel lower bound.** Write h=2π/log X and
+δ=log(pr/q)−log X. In the stated core, |δ|≤2/(100X) for large X.
+Remove the common carrier and the starting-row phase. Since h log X=2π,
+the remaining kernel is a convex combination of exp(ihjδ), 0≤j<n.
+The phase spread is at most 4π/100, because nh≤2πX. Its real part is
+at least cos(4π/100)>1/2. This holds for every choice of row probabilities.
+
+**2. Count the triples before selecting a height.** For large Z choose
+three disjoint prime boxes (fixed endpoints below are exact decimals):
+
+    Z^(7/8) ≤ p ≤ 1.05 Z^(7/8),
+    1.25 Z^(7/8) ≤ r ≤ 1.30 Z^(7/8),
+    Z^(3/4) ≤ q ≤ 1.05 Z^(3/4).
+
+The [prime number theorem](https://dlmf.nist.gov/27.2) on fixed-ratio
+intervals gives ≫ Z^(5/2)/(log Z)^3 triples. All ratios pr/q lie
+between (1.25/1.05)Z and (1.05·1.30)Z. Each therefore contributes an
+interval of heights of length 2/100 wholly inside [Z,2Z]. Integrating
+the counting function and dividing by Z gives a height X in this range
+with ≫ Z^(3/2)/(log Z)^3 triples in its core. Overlaps between the
+intervals count with multiplicity as required.
+
+**3. Keep the source weights.** All three boxes lie below
+floor(X exp(−√log X)) for sufficiently large Z. For the diagonal path,
+the magnitude of each factor is
+
+    (log p/log X)(1−log p/log X)/(|a_phi|√p)
+
+with the corresponding prime in each slot. The logarithmic ratios tend
+uniformly to 7/8 or 3/4, and a_phi tends to one. The product magnitude is
+therefore ≫ Z^(−5/4). Multiply by the count and the kernel lower bound.
+Taking Z through a sequence of disjoint dyadic height ranges proves the
+claim. Distinct triples in these boxes also give distinct reduced ratios:
+q is the denominator and the two numerator primes lie in disjoint boxes.
+
+Thus making a positive taper smoother on the same row interval cannot
+give a uniform o(1) termwise absolute bound for this mixed population.
+The averaging in step 2 finds problematic heights for that method. It
+supplies neither a signed lower bound at those heights nor an estimate
+for the joint cubic through sixth-order arithmetic target.
