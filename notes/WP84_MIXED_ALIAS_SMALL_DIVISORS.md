@@ -123,3 +123,42 @@ The support lies inside the reciprocal estimate's range because
 This leaves the signed Möbius divisor sum with \(d>D\) on the original
 window. Its bound, the coupled higher moments, and the zero-count
 transfer remain open.
+
+## Cutting on the product of the prime and divisor
+
+The reciprocal-phase estimate is governed by \(m=pd\). The cutoff on
+\(d\) above is a sufficient way to bound every such product, and has
+room at its upper endpoint.
+
+In the proof above, retain \(d\le D_*\) and impose an additional mask
+\(pd\le U\), where
+\[
+ D_*=o(\sqrt X/(BL)),\qquad U=o(X/L^3).
+\]
+The original sum on this region is \(o(1)\). Indeed the small-\(q\)
+bound, freeze error, strip error and tail error remain valid with
+\(D_*\) in place of \(D\), since a product mask can only reduce each
+absolute count. In the small-\(q\) bound,
+\(\log(2+D_*)=O(L)\) and \(D_*L^2/\sqrt X=o(1)\).
+These follow from \(B=200L\log L\). The cutoff strip cost is
+\(O_R(BD_*L/\sqrt X)=o(1)\), and the freeze and tail bounds also tend
+to zero.
+
+The product mask does not depend on the integer variable being
+summed by Poisson. On \(q>Q\) the lower bound \(p>XQ/N>D_*\)
+still makes \(m=pd\) unique. The mask \(m\le U\) therefore belongs
+entirely to the \(m\) coefficient and does not add any Fourier cost.
+Dyadic summation of the same reciprocal-phase bound now gives
+\[
+ O_R\left(L^{3/2}\sqrt{U/X}+L e^{-\sqrt L/4}\right)=o(1).
+\]
+If \(U<XQ/N\) the large-\(q\) portion is empty.
+
+For example, take \(D_*=\sqrt X/L^5\) and
+\(U=X/[L^3(\log L)^2]\). These choices cover every
+\(d\le e^{\sqrt L}/[L^3(\log L)^2]\), since \(p\le N\).
+They also cover larger divisors up to
+\(\min(D_*,U/p)\) when \(p\) is smaller. This leaves the signed sum
+over the complementary region. The conclusion applies to the same
+sharp cutoff and the bounded Möbius coefficients of the original
+divisor expansion.
