@@ -239,6 +239,11 @@
       "path": "notes/WP84_TAPERED_MOMENT_REDUCTIONS.md",
       "sha256": "302862f847a2d39dd1c4e3ab85fef8e83bcc3e6836e4d9b46f54765cee58304e",
       "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "notes/WP84_JOINT_ADDITIVE_REDUCTION.md",
+      "sha256": "e318bca7b5f3724cb74b42cb3ddad8a2d117be03428f021a047a4a25d7176f74",
+      "provenance": "prepared-publication-document"
     }
   ]
 }
