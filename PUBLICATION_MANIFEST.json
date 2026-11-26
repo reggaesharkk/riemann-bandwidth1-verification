@@ -234,6 +234,11 @@
       "path": "notes/WP84_MATCHED_WEIL_COMPRESSION.md",
       "sha256": "e2642cdf620a10bc5d91afd4b6a5ecef2830980d0ae0018e5e7dc3b8cc7e2b89",
       "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "notes/WP84_TAPERED_MOMENT_REDUCTIONS.md",
+      "sha256": "302862f847a2d39dd1c4e3ab85fef8e83bcc3e6836e4d9b46f54765cee58304e",
+      "provenance": "prepared-publication-document"
     }
   ]
 }
