@@ -162,3 +162,57 @@ They also cover larger divisors up to
 over the complementary region. The conclusion applies to the same
 sharp cutoff and the bounded Möbius coefficients of the original
 divisor expansion.
+
+## Product cutoff for a restricted set of denominator bands
+
+Let \(Q=\sqrt X e^{-\sqrt L/2}\) as above. Restrict the original divisor
+sum to \(q>Q\) in a union of \(J\ge1\) dyadic intervals, or to a subset
+of the primes in such a union. Impose \(pd\le U\), with
+\[
+U=o\bigl(X/(L^2 J)\bigr).
+\]
+This entire restriction contributes \(o(1)\) with no separate cutoff
+on \(d\). The interval selection and product cutoff may depend on \(X\).
+
+Indeed, for any term in the original window with \(ds\le N\),
+\(p\ge (X-B)q/N\). The same lower bound, up to the use of \(X\) in
+place of \(X-B\), applies on the frozen cutoff domain \(Xq\le pN\).
+Both domains and the cutoff boundary strip therefore have
+\[
+ d\le \frac{2UN}{(X-B)Q}=:D'.
+\]
+Since \(U\le X\) for large \(X\), this is
+\(O(\sqrt X e^{-\sqrt L/2})=o(\sqrt X/(BL))\).
+The absolute freezing, cutoff strip and kernel tail estimates already
+proved apply with this \(D'\). The mask \(pd\le U\) stays in the
+\(m\) coefficient after Poisson. On the frozen cutoff domain one still
+imposes \(p>XQ/N\) before expanding the rank indicator, so \(m=pd\)
+is uniquely represented and the coefficients are bounded.
+The rank expansion over the selected list of denominator primes
+continues to cost \(O(L)\).
+
+Each \(n\asymp M\) has \(O(1)\) prime divisors \(q>Q\).
+The sum of \(1/q\) over the selected primes in a single denominator
+interval is \(O(1/L)\), by the prime counting upper bound and
+\(\log Q\asymp L\). Consequently
+\(\sum_{n\asymp M}|\beta_n|^2\ll MJ/L\), including the phases from
+the rank expansion. Keeping this union in one bilinear form, the
+reciprocal-phase estimate and geometric summation in \(M\) give
+\[
+ O_R\!\left(
+ L\sqrt J\sqrt{U/X}+\sqrt{LJ}\,e^{-\sqrt L/4}\right).
+\]
+Here the second term uses \(M\gg XQ/N\) and \(J=O(L)\) for the
+disjoint dyadic bands that meet the source range. One may always
+take the bands disjoint by using the standard dyadic partition.
+Both terms vanish under the stated hypothesis.
+
+For example, the uppermost range
+\[
+ \frac{N^2}{(X-B)L^{10}}\le q\le\frac{N^2}{X-B}
+\]
+meets \(O(\log L)\) dyadic bands. It admits the explicit cutoff
+\(U=X/[L^2(\log L)^3]\) at cost \(O_R(1/\log L)+o(1)\).
+This exceeds the global product cutoff by \(L/\log L\).
+The remaining high-product terms in these bands still need a signed
+estimate.
