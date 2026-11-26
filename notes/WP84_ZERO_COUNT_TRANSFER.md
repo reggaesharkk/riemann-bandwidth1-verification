@@ -2,7 +2,7 @@
 
 The finite inertia implication can be proved directly. Its application
 requires a comparison between the actual WP84 prime-side matrix and a
-zero-side compression on a matched interval. That comparison remains open.
+zero-side compression on a matched interval. The [matched Weil compression](WP84_MATCHED_WEIL_COMPRESSION.md) proves the comparison for the full sharp matrix used in the radius-9000 route.
 
 ## Finite transfer criterion
 
