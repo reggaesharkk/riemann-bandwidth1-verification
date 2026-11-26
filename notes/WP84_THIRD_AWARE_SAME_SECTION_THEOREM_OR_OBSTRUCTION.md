@@ -526,3 +526,57 @@ same rate. The latter cutoff applies only to that core.
 The argument gives no full-cell o(1) estimate at the second same-sign
 alias: O(L) shells at cost O_R(1/L) allow an order-one total. The outer
 mixed ranges and the full signed higher-moment gate still require estimates.
+
+## Localizing one prime factor across the outer second-alias shells
+
+Retain the fixed-radius ordinary-prime setup and the weighted interval
+estimate just proved. Write u=pqr and L=log X. For same-sign words in
+X²/2 ≤ u ≤ 2X², pick a set S of primes up to X^(3/4). The absolute
+contribution from triples having at least one factor in S is
+
+    ≪_R sum_{p in S} g(p)/p.                                  (A)
+
+To prove this, fix the slot and its prime p, then sum over v=u/p. Each
+two-prime v has at most two orderings. In a product interval of length h
+at scale X² the corresponding interval for v has length h/p and scale
+X²/p. For X ≤ h ≤ X² and p ≤ X^(3/4), the ratio of h/p to
+(X²/p)^(1/8) is at least X^(3/32). Thus Shiu's estimate for g applies
+even on the core scale h=X, with room for constant-factor enlargements.
+As in the preceding proof, clipped shells can be enlarged or split into
+a bounded number of intervals of comparable length, all at this scale.
+The weighted count at fixed p is O(h/(pL)) before the factor g(p).
+
+The coefficient is O(g(p)g(v)/X). The core costs O_R(g(p)/(pL)).
+On h<|u−X²|≤2h the kernel saves O(X/h), giving the same cost.
+There are O(L) shells across the entire comparable range. Summing over
+p and over the three possible marked slots yields (A); overcounting is
+permitted for this absolute majorant. The original carrier and section
+are retained.
+
+**Consequences.** For S the primes in [A,B] inside [2,X^(3/4)],
+Mertens' estimate sum_{p≤z}(log p)/p = log z + O(1) gives
+O_R((1+log(B/A))/L) in (A), uniformly in the endpoints. In particular:
+
+- Triples with a prime ≤ exp(L^(3/4)) contribute O_R(L^(-1/4)).
+- The same bound holds for triples with largest/smallest prime ratio
+  ≤ exp(L^(3/4)). Their smallest prime lies between
+  (X²/2)^(1/3) exp(-2L^(3/4)/3) and (2X²)^(1/3), so the marked
+  interval has logarithmic width O(1+L^(3/4)).
+
+These conclusions cover all offsets in [X²/2,2X²]. Partitioning every
+possible smallest prime into short intervals would add their costs; (A)
+does not yield o(1) for their union.
+
+**Away from the comparable range.** In N²<u≤X² L^(3/2) outside
+[X²/2,2X²], log u has distance at least log 2 from L times any integer
+for large X. Indeed log u=2L+o(L) throughout, and the interval excluded
+around 2L has half-width log 2. Hence the kernel costs O(1/T).
+Cover the product range by dyadic intervals (enlarging endpoints for
+the counting majorant only). At scale U each has
+sum g(u)/√u ≪ √U/L by the weighted interval estimate, since log U is
+comparable to L. Summing the geometric series and dividing by T gives
+O_R(L^(-1/4)). The earlier elementary estimate already treats u≤N².
+
+This leaves same-sign triples at larger products and part of the comparable
+range with separated factor sizes. Mixed signs and the joint higher-moment
+inequality retain their own open contributions.
