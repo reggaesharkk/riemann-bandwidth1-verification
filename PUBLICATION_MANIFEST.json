@@ -244,6 +244,11 @@
       "path": "notes/WP84_JOINT_ADDITIVE_REDUCTION.md",
       "sha256": "e318bca7b5f3724cb74b42cb3ddad8a2d117be03428f021a047a4a25d7176f74",
       "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "notes/WP84_FIFTH_FIRST_ALIAS.md",
+      "sha256": "68fc59fc2d9907ded19bd7ae5d66e868f99d19f9f853851121f2e74f9491fbea",
+      "provenance": "prepared-publication-document"
     }
   ]
 }
