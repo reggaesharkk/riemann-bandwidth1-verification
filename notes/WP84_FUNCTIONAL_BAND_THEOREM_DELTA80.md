@@ -251,8 +251,8 @@ then the bounded consumer gives
 
     limsup_T tau F_80(H_T)<0.105,
 
-and the already-audited zero-count transfer yields a strict simple-zero
-proportion above 79 percent.
+If the matched hypotheses in the [zero-count transfer criterion](WP84_ZERO_COUNT_TRANSFER.md)
+are established, this yields a strict simple-zero proportion above 79 percent.
 
 The square threshold lies above the frozen model value by
 
