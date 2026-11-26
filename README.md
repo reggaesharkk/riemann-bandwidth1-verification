@@ -14,6 +14,8 @@ What proportion of the nontrivial zeros of the Riemann zeta function lie on the 
 
 [WP84 milestones](#wp84-milestones) · [Project guide](#start-here) · [Mathematical status](#current-mathematical-status) · [Reproduction](#evidence-and-reproduction) · [Cite the archive](#cite-this-release)
 
+**Current proof status.** See the [radius-9000 proof ledger](notes/WP84_R9000_PROOF_STATUS.md) for the matched Weil comparison, the paired contribution, and the remaining signed arithmetic inequality.
+
 ## WP84 milestones
 
 | Result | What the calculation establishes |

@@ -122,7 +122,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "aa33b5c68a7d1a04e549327972e2cb34ee565ffaa2ae34080768f146b25a4e71",
+      "sha256": "3e8735a66f68e8ca2f240467d3ffc95189b832ba87937906624bceb0b22d0f3e",
       "provenance": "prepared-publication-document"
     },
     {
@@ -248,6 +248,11 @@
     {
       "path": "notes/WP84_FIFTH_FIRST_ALIAS.md",
       "sha256": "68fc59fc2d9907ded19bd7ae5d66e868f99d19f9f853851121f2e74f9491fbea",
+      "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "notes/WP84_R9000_PROOF_STATUS.md",
+      "sha256": "e533ac35fe95c1ca443b3e44e811edb03fde98e3a286eb1dc31019431c6e78cf",
       "provenance": "prepared-publication-document"
     }
   ]
