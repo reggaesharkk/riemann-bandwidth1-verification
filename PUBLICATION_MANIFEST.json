@@ -219,6 +219,11 @@
       "path": "VERIFICATION_SUMMARY.md",
       "sha256": "f72a230266b51cb044858b397aeebb27bc348c888cc77355a64d97a4c0d8ee69",
       "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "notes/WP84_MIXED_ALIAS_SMALL_DIVISORS.md",
+      "sha256": "601244562e57270f0e167c4851c7ee3af41bd4d0c3f47352d1d366177c0c3748",
+      "provenance": "prepared-publication-document"
     }
   ]
 }
