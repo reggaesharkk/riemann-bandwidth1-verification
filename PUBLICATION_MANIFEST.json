@@ -122,7 +122,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "3e8735a66f68e8ca2f240467d3ffc95189b832ba87937906624bceb0b22d0f3e",
+      "sha256": "d5f2465c8c1ca5fbf0374dca652af6a05a148807cddbb9753ed20f3215777fe1",
       "provenance": "prepared-publication-document"
     },
     {
@@ -252,8 +252,13 @@
     },
     {
       "path": "notes/WP84_R9000_PROOF_STATUS.md",
-      "sha256": "e533ac35fe95c1ca443b3e44e811edb03fde98e3a286eb1dc31019431c6e78cf",
+      "sha256": "b3493ea50d2f966800fd39b6d4a3ced18e5b129b81f5fd3f0ca040365179407e",
       "provenance": "prepared-publication-document"
+    },
+    {
+      "path": "src/wp84_paired_sixth_replay.py",
+      "provenance": "new-publication-verification-support",
+      "sha256": "43a4ac1a185f7649ad862189bddf027e53cd21ee27cb9e2d1cb627857a6c5adc"
     }
   ]
 }

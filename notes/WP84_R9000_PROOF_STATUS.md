@@ -74,3 +74,46 @@ proved polylogarithmic cutoff below \(X\) does not in itself put
 a block beyond \(M\le X\). These are boundaries of the stated
 estimate and reduction. An upper bound on the remaining signed
 contribution is still needed.
+
+## Finite-radius model audit
+
+I use the following numbers to test the circular unitary ensemble (CUE) model. Substitution of the proposed infinite-radius centered moments
+`(1, 0, 1/3, 0, 1/4, 1/36, 61/252)` in the [square polynomial](WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md) gives exactly
+`18989225/192959881`. The difference from the square threshold is about 0.003697891756. Each entry below is in square units. These are rounded working charges conditional on the model and its cumulant reductions.
+
+| Term | Charge |
+| --- | ---: |
+| Variance | 0.000000994689 |
+| Cubic | 0 |
+| Fourth | 0.000009972241 |
+| Fifth | 0.000278076622 |
+| Sixth, fully paired | 0.002254428187 |
+| Sixth, fourth cumulant times a pair | 0.001127214093 |
+| Remaining before the connected sixth cumulant | 0.000027205923 |
+
+For the fourth cumulant times a pair, the normalized marginal is
+$6s^2-4s^3$. Its sum with its reflection about $1/2$ equals two.
+The same identity holds for the pair marginal $2s$. Thus each slot has
+mean squared Fourier tail $v_R$ by Parseval. The absolute mass is
+$15\cdot6/12=7.5$. With $G=1.18$, the averaged telescoping factor is
+$6\sqrt2+\sum_{b=1}^5(6-b)G^{b-1}$. Multiplying by $7.5v_R$ and
+$93315600/192959881$ gives the semi-connected charge above.
+
+A proposed rational triangulation gives total connected absolute mass
+$30(37/2880)+20(757/5832)=69551/23328<3$. The rational addition checks.
+Independent verification of the continuous kernels and simplex integration remains open. Two domain checks for replay are the four-positive coordinate volume $11/24$ before ordering, obtained by integrating
+$(s^3-4(s-1)^3)/6$ from 1 to 2, and the volume $11/60$ after weighting by $2-s$ for the two negative slots. For three positive and three negative slots the balanced domain above total frequency one has volume $1/2$ in five free coordinates. Conditional on mass at most three and the other ledger inputs, a paired upper debit of 0.001460 suffices. The actual prime matrix still requires the signed arithmetic estimate above.
+
+### Exact small-section test for the paired sector
+
+I sum the 15 Gaussian Wick matchings on each removed closed six-step walk with open boundaries. The [replay script](../src/wp84_paired_sixth_replay.py) keeps rational coefficients in $x=\pi^{-2}$. Run from the repository root:
+
+```sh
+python src/wp84_paired_sixth_replay.py --size 6 --radius 2
+```
+
+For six sites at radius two, the normalized banded minus full paired sixth moment is exactly
+$-2093x/43200-8267831x^2/17280000-111195861539x^3/62208000000$.
+It evaluates to about $-0.01168007741$. At radius five the same six-site difference vanishes identically.
+
+For the walk $(0,\ell,0,d,0,d,0)$ with $0<|d|\le R<|\ell|$, the three matchings pairing the two long edges contribute $3/(8\pi^6 d^4\ell^2)$. The twelve remaining matchings contribute the same amount because the edges share the variable at site zero. Even at fixed $d=1$, summing over positive $\ell>R$ gives a cross-pair contribution of order $1/R$. A uniform signed estimate must account for these terms. The small-section replay supplies a check for that calculation. The paired upper bound at radius 9000 and the full finite-radius certificate remain open.
