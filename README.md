@@ -16,6 +16,8 @@ What proportion of the nontrivial zeros of the Riemann zeta function lie on the 
 
 **Current proof status.** See the [radius-9000 proof ledger](notes/WP84_R9000_PROOF_STATUS.md) for the matched Weil comparison, the paired contribution, and the remaining signed arithmetic inequality.
 
+**Finite-radius model check.** I added an exact six-site replay of the paired sixth moment and a model error budget. The semi-connected term uses about 0.00112721 square units. A uniform paired estimate and verification of the connected mass remain open. [Model ledger and replay instructions](notes/WP84_R9000_PROOF_STATUS.md#finite-radius-model-audit)
+
 ## WP84 milestones
 
 | Result | What the calculation establishes |
